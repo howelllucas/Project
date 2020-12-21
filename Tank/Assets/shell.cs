@@ -5,22 +5,14 @@ using UnityEngine;
 public class shell : MonoBehaviour
 {
     public GameObject ShellExplosion;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public AudioClip audioClip;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnTriggerEnter(Collider other)
     {
         GameObject.Instantiate(ShellExplosion,this.transform.position, this.transform.rotation);
+        AudioSource.PlayClipAtPoint(audioClip, this.transform.position);
         GameObject.Destroy(this.gameObject);
-        if (other.tag=="Tank")
+        if (other.tag=="enemy")
         {
             other.SendMessage("sendMassage");
         }

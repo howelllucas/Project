@@ -1,18 +1,20 @@
 ﻿<Properties StartupConfiguration="{BE59C06D-9AAC-64A8-0390-8CA6FBC949DD}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/shell.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/NewBehaviourScript.cs">
     <Files>
-      <File FileName="Assets/Scripts/Tank_Move_My.cs" Line="22" Column="39" />
-      <File FileName="Assets/Scripts/TankAttch.cs" Line="22" Column="29" />
-      <File FileName="Assets/Tank.cs" Line="12" Column="9" />
-      <File FileName="Assets/shell.cs" Line="22" Column="45" />
+      <File FileName="Assets/Scripts/Tank_Move_My.cs" Line="43" Column="10" />
+      <File FileName="Assets/Scripts/TankAttch.cs" Line="25" Column="76" />
+      <File FileName="Assets/Tank.cs" Line="27" Column="24" />
+      <File FileName="Assets/shell.cs" />
+      <File FileName="Assets/Scripts/NewBehaviourScript.cs" Line="272" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Tank" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True" />
-              <Node name="shell.cs" selected="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="NewBehaviourScript.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -21,7 +23,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2944fae1-9eb0-4657-a429-aa17becec8ba" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b4ee5165-7403-49a2-a0a1-2a36dc42d457" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

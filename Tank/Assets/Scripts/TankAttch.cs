@@ -6,6 +6,7 @@ public class TankAttch : MonoBehaviour
 {
     public GameObject shell;
     public int shellSpeed = 1;
+    public AudioClip audioClip;
 
     public KeyCode fireKey = KeyCode.Space;
 
@@ -21,6 +22,7 @@ public class TankAttch : MonoBehaviour
     {
         if (Input.GetKeyDown(fireKey))
         {
+            AudioSource.PlayClipAtPoint(audioClip,this.transform.position);
             GameObject go = GameObject.Instantiate(shell, firePosition.position, firePosition.rotation);
             go.GetComponent<Rigidbody>().velocity = this.transform.forward * shellSpeed;
         }

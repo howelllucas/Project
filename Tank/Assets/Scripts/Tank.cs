@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 //using UnityEngine.Experimental.UIElements;
 using UnityEngine.UI;
 
 public class Tank : MonoBehaviour
 {
+
+    public UnityAction TankDead;
+
     public int HP = 100;
     private int nowHP= 100;
     public GameObject TankExplusion;
@@ -16,7 +20,7 @@ public class Tank : MonoBehaviour
     
 
 
-    public void sendMassage()
+    public void sendMessage()
     {
         if (nowHP <= 0) return;
         if (nowHP >= 0)
@@ -29,7 +33,10 @@ public class Tank : MonoBehaviour
             AudioSource.PlayClipAtPoint(audio, this.transform.position);
             GameObject.Instantiate(TankExplusion, this.transform.position, this.transform.rotation);
             Destroy(this.gameObject);
+            TankDead();
+
         }
 
     }
+    
 }

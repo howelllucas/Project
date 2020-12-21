@@ -2,18 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class shellEx : MonoBehaviour
+
+public class particDes : MonoBehaviour
 {
-    public float deadTime;
+
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(this.gameObject, deadTime);
-    }
 
+    }
     // Update is called once per frame
     void Update()
     {
-        
+        if (!this.transform.GetComponent<ParticleSystem>().IsAlive())
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

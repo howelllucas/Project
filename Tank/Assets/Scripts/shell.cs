@@ -12,9 +12,10 @@ public class shell : MonoBehaviour
         GameObject.Instantiate(ShellExplosion,this.transform.position, this.transform.rotation);
         AudioSource.PlayClipAtPoint(audioClip, this.transform.position);
         GameObject.Destroy(this.gameObject);
+        
         if (other.tag=="enemy")
         {
-            other.SendMessage("sendMassage");
+            other.SendMessage("sendMessage");
         }
     }
 }

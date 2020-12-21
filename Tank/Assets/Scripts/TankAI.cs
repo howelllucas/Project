@@ -6,6 +6,14 @@ using UnityEngine.SceneManagement;
 public class TankAI : MonoBehaviour
 {
     private TankAttch tankAttch;
+    //攻击冷却时间
+    public float attackTime = 10;
+    
+    public GameObject shell;
+    public int shellSpeed = 1;
+    private Transform firePosition;
+    private bool isAlive=true;
+
     private GameObject playerUnit;          //获取玩家单位
     private Animator thisAnimator;          //自身动画组件
     private Vector3 initialPosition;            //初始位置
@@ -42,9 +50,19 @@ public class TankAI : MonoBehaviour
     private bool is_Warned = false;
     private bool is_Running = false;
 
+    void Awake()
+    {
+        
+        //注册到tank脚本里面的方法
+        this.GetComponent<Tank>().TankDead = setAlive;
+    }
+
     void Start()
     {
-        tankAttch = GetComponent<TankAttch>();
+       
+        firePosition = transform.Find("FirePosition");
+
+        tankAttch = this.transform.GetComponent<TankAttch>();
         playerUnit = GameObject.FindGameObjectWithTag("Player");
         thisAnimator = GetComponent<Animator>();
 
@@ -93,6 +111,7 @@ public class TankAI : MonoBehaviour
 
     void Update()
     {
+        attackTime += Time.deltaTime;
         switch (currentState)
         {
             //待机状态，等待actRestTme后重新随机指令
@@ -175,10 +194,14 @@ public class TankAI : MonoBehaviour
     /// </summary>
     void EnemyDistanceCheck()
     {
+        if (isAlive == false) return;
+        
         diatanceToPlayer = Vector3.Distance(playerUnit.transform.position, transform.position);
         if (diatanceToPlayer < attackRange)
         {
-            SceneManager.LoadScene("Battle");
+            //InvokeRepeating("Attack", 0, 3);
+            Attack();
+            //SceneManager.LoadScene("Battle");
         }
         else if (diatanceToPlayer < defendRadius)
         {
@@ -195,6 +218,7 @@ public class TankAI : MonoBehaviour
     /// </summary>
     void WarningCheck()
     {
+        if (isAlive == false) return;
         diatanceToPlayer = Vector3.Distance(playerUnit.transform.position, transform.position);
         if (diatanceToPlayer < defendRadius)
         {
@@ -214,12 +238,15 @@ public class TankAI : MonoBehaviour
     /// </summary>
     void WanderRadiusCheck()
     {
+        if (isAlive == false) return;
         diatanceToPlayer = Vector3.Distance(playerUnit.transform.position, transform.position);
         diatanceToInitial = Vector3.Distance(transform.position, initialPosition);
 
         if (diatanceToPlayer < attackRange)
         {
-            SceneManager.LoadScene("Battle");
+            //InvokeRepeating("Attack", 0, 3);
+            Attack();
+            //SceneManager.LoadScene("Battle");
         }
         else if (diatanceToPlayer < defendRadius)
         {
@@ -242,14 +269,16 @@ public class TankAI : MonoBehaviour
     /// </summary>
     void ChaseRadiusCheck()
     {
+        if (isAlive == false) return;
         diatanceToPlayer = Vector3.Distance(playerUnit.transform.position, transform.position);
         diatanceToInitial = Vector3.Distance(transform.position, initialPosition);
 
         if (diatanceToPlayer < attackRange)
         {
             //这里是加载的战斗场景，可以改为tank的战斗动画
-            tankAttch
-            SceneManager.LoadScene("Battle");
+            //InvokeRepeating("Attack", 0, 3);
+            Attack();
+            //SceneManager.LoadScene("Battle");
         }
         //如果超出追击范围或者敌人的距离超出警戒距离就返回
         if (diatanceToInitial > chaseRadius || diatanceToPlayer > alertRadius)
@@ -263,6 +292,7 @@ public class TankAI : MonoBehaviour
     /// </summary>
     void ReturnCheck()
     {
+        if (isAlive == false) return;
         diatanceToInitial = Vector3.Distance(transform.position, initialPosition);
         //如果已经接近初始位置，则随机一个待机状态
         if (diatanceToInitial < 0.5f)
@@ -271,5 +301,17 @@ public class TankAI : MonoBehaviour
             RandomAction();
         }
     }
-    
+    public void Attack()
+    {
+        if (attackTime < 10) return;
+        //AudioSource.PlayClipAtPoint(audioClip, this.transform.position);
+        GameObject go = GameObject.Instantiate(shell, firePosition.position, firePosition.rotation);
+        go.GetComponent<Rigidbody>().velocity = this.transform.forward * shellSpeed;
+        attackTime = 0;
+    }
+    //tank是否活着
+    public void setAlive()
+    {
+        isAlive=false;
+    }
 }

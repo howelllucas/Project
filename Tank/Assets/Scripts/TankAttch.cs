@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.UIElements.GraphView;
 using UnityEngine;
 
 public class TankAttch : MonoBehaviour
@@ -22,9 +23,13 @@ public class TankAttch : MonoBehaviour
     {
         if (Input.GetKeyDown(fireKey))
         {
-            AudioSource.PlayClipAtPoint(audioClip,this.transform.position);
-            GameObject go = GameObject.Instantiate(shell, firePosition.position, firePosition.rotation);
-            go.GetComponent<Rigidbody>().velocity = this.transform.forward * shellSpeed;
+            Attack();
         }
+    }
+    public void Attack()
+    {
+        AudioSource.PlayClipAtPoint(audioClip, this.transform.position);
+        GameObject go = GameObject.Instantiate(shell, firePosition.position, firePosition.rotation);
+        go.GetComponent<Rigidbody>().velocity = this.transform.forward * shellSpeed;
     }
 }

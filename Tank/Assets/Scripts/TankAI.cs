@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class TankAI : MonoBehaviour
 {
-
+    private TankAttch tankAttch;
     private GameObject playerUnit;          //获取玩家单位
     private Animator thisAnimator;          //自身动画组件
     private Vector3 initialPosition;            //初始位置
@@ -44,6 +44,7 @@ public class TankAI : MonoBehaviour
 
     void Start()
     {
+        tankAttch = GetComponent<TankAttch>();
         playerUnit = GameObject.FindGameObjectWithTag("Player");
         thisAnimator = GetComponent<Animator>();
 
@@ -247,6 +248,7 @@ public class TankAI : MonoBehaviour
         if (diatanceToPlayer < attackRange)
         {
             //这里是加载的战斗场景，可以改为tank的战斗动画
+            tankAttch
             SceneManager.LoadScene("Battle");
         }
         //如果超出追击范围或者敌人的距离超出警戒距离就返回
@@ -269,5 +271,5 @@ public class TankAI : MonoBehaviour
             RandomAction();
         }
     }
-
+    
 }

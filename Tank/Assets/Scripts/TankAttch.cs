@@ -21,10 +21,7 @@ public class TankAttch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(fireKey))
-        {
-            Attack();
-        }
+        
     }
     public void Attack()
     {

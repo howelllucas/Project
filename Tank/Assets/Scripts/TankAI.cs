@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TankAI : MonoBehaviour
 {
     private TankAttch tankAttch;
     //攻击冷却时间
-    public float attackTime = 10;
+    public float attackTime = 1;
     
     public GameObject shell;
     public int shellSpeed = 1;
@@ -54,7 +55,7 @@ public class TankAI : MonoBehaviour
     {
         
         //注册到tank脚本里面的方法
-        this.GetComponent<Tank>().TankDead = setAlive;
+        this.GetComponent<Tankenemy>().TankDead = setAlive;
     }
 
     void Start()
@@ -306,7 +307,7 @@ public class TankAI : MonoBehaviour
     }
     public void Attack()
     {
-        if (attackTime < 10) return;
+        if (attackTime < 1) return;
         //AudioSource.PlayClipAtPoint(audioClip, this.transform.position);
         GameObject go = GameObject.Instantiate(shell, firePosition.position, firePosition.rotation);
         go.GetComponent<Rigidbody>().velocity = this.transform.forward * shellSpeed;

@@ -4,7 +4,8 @@
       <File FileName="Assets/Scripts/Tank_Move_My.cs" Line="31" Column="1" />
       <File FileName="Assets/Scripts/TankAttch.cs" Line="29" Column="11" />
       <File FileName="Assets/Scripts/Tank.cs" Line="30" Column="10" />
-      <File FileName="Assets/Scripts/TankAI.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TankAI.cs" Line="222" Column="6" />
+      <File FileName="Assets/Scripts/Tankenemy.cs" Line="31" Column="56" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

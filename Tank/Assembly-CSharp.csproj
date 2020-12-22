@@ -119,6 +119,7 @@
     <Compile Include="Assets\Scripts\Camera\CameraControl.cs" />
     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
     <Compile Include="Assets\Scripts\Managers\TankManager.cs" />
+    <Compile Include="Assets\Scripts\MSBaseObject.cs" />
     <Compile Include="Assets\Scripts\particDes.cs" />
     <Compile Include="Assets\Scripts\shell.cs" />
     <Compile Include="Assets\Scripts\Shell\ShellExplosion.cs" />
@@ -130,6 +131,7 @@
     <Compile Include="Assets\Scripts\Tank_Move_My.cs" />
     <Compile Include="Assets\Scripts\TankAI.cs" />
     <Compile Include="Assets\Scripts\TankAttch.cs" />
+    <Compile Include="Assets\Scripts\Tankenemy.cs" />
     <Compile Include="Assets\Scripts\UI\UIDirectionControl.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />

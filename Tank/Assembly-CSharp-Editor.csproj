@@ -64,6 +64,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Editor\Assets\Code\AHInt.cs" />
+    <Compile Include="Assets\Editor\Assets\Code\DataStream.cs" />
+    <Compile Include="Assets\Editor\Assets\Code\Editor\LevelOptionInspector.cs" />
+    <Compile Include="Assets\Editor\Assets\Code\Editor\LogPosition.cs" />
+    <Compile Include="Assets\Editor\Assets\Code\Editor\MapEditor.cs" />
+    <Compile Include="Assets\Editor\Assets\Code\Editor\MELoadLevelData.cs" />
+    <Compile Include="Assets\Editor\Assets\Code\Editor\MESaveLevelData.cs" />
+    <Compile Include="Assets\Editor\Assets\Code\MapObj\LevelOption.cs" />
+    <Compile Include="Assets\Editor\Assets\Code\MapObj\MSBaseObject.cs" />
+    <Compile Include="Assets\Editor\Assets\Code\MapObj\MSBaseObjectData.cs" />
+    <Compile Include="Assets\Editor\Assets\Code\MapObj\MSLevelOptionDataModel.cs" />
+    <Compile Include="Assets\Editor\Assets\Code\Test.cs" />
+    <Compile Include="Assets\Editor\Assets\Code\Tools.cs" />
     <Compile Include="Assets\Editor\MoveSceneViewCamera.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Models\AmbientOcclusionModelEditor.cs" />
@@ -100,6 +113,7 @@
     <Compile Include="Assets\PostProcessing\Editor\Utils\FxStyles.cs" />
     <Compile Include="Assets\PostProcessing\Editor\Utils\ReflectionUtils.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
+    <None Include="Assets\Editor\ProjectSettings\ProjectVersion.txt" />
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>/Users/luhongwei/Documents/GitFloder/Tank/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
     </Reference>
@@ -378,6 +392,12 @@
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>/Users/luhongwei/Documents/GitFloder/Tank/Library/PackageCache/com.unity.analytics@3.2.3/Editor/Unity.Analytics.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpZipLib">
+      <HintPath>/Users/luhongwei/Documents/GitFloder/Tank/Assets/Editor/Assets/Plugins/SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson">
+      <HintPath>/Users/luhongwei/Documents/GitFloder/Tank/Assets/Editor/Assets/Plugins/LitJson.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>/Applications/Unity/Hub/Editor/2018.4.30f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

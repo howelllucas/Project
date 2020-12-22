@@ -7,7 +7,7 @@ public class Tank_Move_My : MonoBehaviour
 {
     public int Speed = 5;
     public int angularSpeed = 8;
-    private Rigidbody rigidbody;
+    private Rigidbody rigidbodyR;
 
     public AudioClip idleClip;
     public AudioClip drivingClip;
@@ -19,7 +19,7 @@ public class Tank_Move_My : MonoBehaviour
     // Start is VVcalled before the first frame update
     void Start()
     {
-        rigidbody = this.transform.GetComponent<Rigidbody>();
+        rigidbodyR = this.transform.GetComponent<Rigidbody>();
         audioSource = this.transform.GetComponent<AudioSource>();
     }
 
@@ -27,11 +27,11 @@ public class Tank_Move_My : MonoBehaviour
     void FixedUpdate()
     {
         V = Input.GetAxis("VerticalUI");
-        rigidbody.velocity = this.transform.forward * V * Speed;
+        rigidbodyR.velocity = this.transform.forward * V * Speed;
 
         H = Input.GetAxis("HorizontalUI");
-        
-        rigidbody.angularVelocity = this.transform.up * H * angularSpeed;
+
+        rigidbodyR.angularVelocity = this.transform.up * H * angularSpeed;
 
         if (Math.Abs(V)>0.1||Math.Abs(H)>0.1)
         {

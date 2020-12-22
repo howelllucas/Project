@@ -15,7 +15,7 @@ public class Tank : MonoBehaviour
     public GameObject TankExplusion;
     public Slider slider;
 
-    public AudioClip audio;
+    public AudioClip audioA;
 
     
 
@@ -30,7 +30,7 @@ public class Tank : MonoBehaviour
         }
         if (nowHP <= 0)
         {
-            AudioSource.PlayClipAtPoint(audio, this.transform.position);
+            AudioSource.PlayClipAtPoint(audioA, this.transform.position);
             GameObject.Instantiate(TankExplusion, this.transform.position, this.transform.rotation);
             Destroy(this.gameObject);
             TankDead();

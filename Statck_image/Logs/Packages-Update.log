@@ -1,0 +1,14 @@
+
+=== Tue Dec 15 13:36:41 2020
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were added:
+  com.unity.collab-proxy@1.2.15
+  com.unity.doc_zh@0.1.0-preview.10
+  com.unity.messenger@1.0.7-preview
+The following packages were updated:
+  com.unity.analytics from version 2.0.16 to 3.2.2
+  com.unity.package-manager-ui from version 1.9.11 to 2.0.8
+  com.unity.textmeshpro from version 1.2.4 to 1.4.1

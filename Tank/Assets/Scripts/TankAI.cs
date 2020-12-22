@@ -201,6 +201,7 @@ public class TankAI : MonoBehaviour
         {
             //InvokeRepeating("Attack", 0, 3);
             Attack();
+            currentState = MonsterState.STAND;
             //SceneManager.LoadScene("Battle");
         }
         else if (diatanceToPlayer < defendRadius)
@@ -246,6 +247,7 @@ public class TankAI : MonoBehaviour
         {
             //InvokeRepeating("Attack", 0, 3);
             Attack();
+            currentState = MonsterState.STAND;
             //SceneManager.LoadScene("Battle");
         }
         else if (diatanceToPlayer < defendRadius)
@@ -278,6 +280,7 @@ public class TankAI : MonoBehaviour
             //这里是加载的战斗场景，可以改为tank的战斗动画
             //InvokeRepeating("Attack", 0, 3);
             Attack();
+            currentState = MonsterState.STAND;
             //SceneManager.LoadScene("Battle");
         }
         //如果超出追击范围或者敌人的距离超出警戒距离就返回

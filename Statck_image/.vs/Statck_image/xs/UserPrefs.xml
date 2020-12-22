@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{4FA780BF-8F5D-5AD5-A33A-AD4AC88E2293}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/GetColor.cs">
+    <Files>
+      <File FileName="Assets/Demo_texture.cs" Line="57" Column="114" />
+      <File FileName="Assets/Script/GetColor.cs" Line="27" Column="78" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Statck_image" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Script" expanded="True">
+                <Node name="GetColor.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="859927e2-18a7-431f-8ede-066a2ec53d42" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

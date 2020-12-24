@@ -64,6 +64,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\Game\bullet\bullet.cs" />
+    <Compile Include="Assets\Script\Game\enemy\enemyTank.cs" />
+    <Compile Include="Assets\Script\Game\FollowTarget.cs" />
     <Compile Include="Assets\Script\Game\Player\PlayerTank.cs" />
     <Compile Include="Assets\Script\UI\StartPlane.cs" />
     <Reference Include="UnityEngine.Purchasing">

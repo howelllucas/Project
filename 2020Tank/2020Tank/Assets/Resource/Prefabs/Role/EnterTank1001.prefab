@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &333480640
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 333480641}
+  m_Layer: 8
+  m_Name: creatBulletPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &333480641
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333480640}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.75, z: 0.03}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4000012164600418}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1000010105537362
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,6 +748,7 @@ GameObject:
   - component: {fileID: 4000012164600418}
   - component: {fileID: 54000012622151628}
   - component: {fileID: 65000012858640168}
+  - component: {fileID: 722483971}
   m_Layer: 8
   m_Name: EnterTank1001
   m_TagString: Monster
@@ -740,6 +771,7 @@ Transform:
   - {fileID: 224000013230406146}
   - {fileID: 4000012631098350}
   - {fileID: 4000013667973440}
+  - {fileID: 333480641}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -772,6 +804,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.2, y: 1.3, z: 1.5}
   m_Center: {x: 0, y: 0.65, z: 0}
+--- !u!114 &722483971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011711212022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f714cafe591f145f5b1b20b01eecd7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followDistance: 10
+  attackDistance: 6
+  bulletPrefab: {fileID: 1000010310479910, guid: 7a60c077f705e2742ac4de552f20f623,
+    type: 3}
+  bulletCreatPoint: {fileID: 333480641}
+  firePrefab: {fileID: 1000011513120438, guid: f70d27f5cf28c8941bbfd6febd74797f, type: 3}
+  HPSlider: {fileID: 114000013830451960}
+  deadFX: {fileID: 183222, guid: f2ee009e61b1177489331d95174281b1, type: 3}
 --- !u!1 &1000011893966160
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,6 +1228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4000012631098350}
+  - component: {fileID: 1327703150}
   m_Layer: 9
   m_Name: HUD
   m_TagString: Untagged
@@ -1199,6 +1252,18 @@ Transform:
   m_Father: {fileID: 4000012164600418}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1327703150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000013784483256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e56e05d3e8cc842aa86ec7cd7d270256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1000014092599136
 GameObject:
   m_ObjectHideFlags: 0

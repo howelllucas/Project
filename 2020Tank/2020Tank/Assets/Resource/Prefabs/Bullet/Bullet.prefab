@@ -122,10 +122,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7719e613387c4749baf378c05fc3235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletEXPrefab: {fileID: 1000011513120438, guid: f70d27f5cf28c8941bbfd6febd74797f,
-    type: 3}
+  bulletEXPrefab: {fileID: 183222, guid: f2ee009e61b1177489331d95174281b1, type: 3}
   Owner: {fileID: 0}
-  bulletSpeed: 12
+  bulletSpeed: 24
+  demage: 10
 --- !u!1 &1000013784038190
 GameObject:
   m_ObjectHideFlags: 0

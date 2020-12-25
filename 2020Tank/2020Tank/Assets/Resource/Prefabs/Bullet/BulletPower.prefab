@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 23000013250707318}
   - component: {fileID: 135000011308072078}
   - component: {fileID: 54000013431412088}
+  - component: {fileID: 114273650718004868}
   m_Layer: 10
   m_Name: BulletPower
   m_TagString: Untagged
@@ -109,6 +110,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
+--- !u!114 &114273650718004868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010310479910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7719e613387c4749baf378c05fc3235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletEXPrefab: {fileID: 183222, guid: f2ee009e61b1177489331d95174281b1, type: 3}
+  Owner: {fileID: 0}
+  bulletSpeed: 24
+  demage: 10
 --- !u!1 &1000010476581430
 GameObject:
   m_ObjectHideFlags: 0

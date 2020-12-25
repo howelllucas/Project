@@ -66,9 +66,11 @@
   <ItemGroup>
     <Compile Include="Assets\Script\Game\bullet\bullet.cs" />
     <Compile Include="Assets\Script\Game\enemy\enemyTank.cs" />
+    <Compile Include="Assets\Script\Game\enemy\EnterTrigger.cs" />
     <Compile Include="Assets\Script\Game\FollowTarget.cs" />
     <Compile Include="Assets\Script\Game\Player\PlayerTank.cs" />
     <Compile Include="Assets\Script\UI\StartPlane.cs" />
+    <Compile Include="Assets\Script\UI\UIBillboard.cs" />
     <Reference Include="UnityEngine.Purchasing">
       <HintPath>/Users/luhongwei/Documents/GitFloder/2020Tank/2020Tank/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
     </Reference>

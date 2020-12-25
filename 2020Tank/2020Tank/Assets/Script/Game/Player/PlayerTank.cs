@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
+using UnityEngine.UI;
 
 public class PlayerTank : MonoBehaviour
 {
@@ -15,14 +17,25 @@ public class PlayerTank : MonoBehaviour
     float bulletTime=0.5f;
     //下一次发射时间
     float nextTime=0 ;
+    //总血量
+    public float HP;
+    //当前血量
+    private float currHP;
+    //死亡特效
+    public GameObject deadFX;
+    //血条
+    public Slider HPSlider;
     void Awake()
     {
         rid = this.transform.GetComponent<Rigidbody>();
+        HP = 40;
+        currHP = HP;
     }
 
     void Start()
     {
         Camera.main.GetComponent<FollowTarget>().Target = this.transform;
+        
     }
 
     
@@ -52,13 +65,33 @@ public class PlayerTank : MonoBehaviour
     }
     void creatBullet()
     {
-        bulletPrefab.GetComponent<bullet>().Owner = this.gameObject;
+        
         if (Time.time> nextTime)
         {
             GameObject.Instantiate(firePrefab, bulletCreatPoint.position, Quaternion.identity);
-            GameObject.Instantiate(bulletPrefab, bulletCreatPoint.position, bulletCreatPoint.rotation);
+            GameObject bu= GameObject.Instantiate(bulletPrefab, bulletCreatPoint.position, bulletCreatPoint.rotation);
+            bu.GetComponent<bullet>().Owner = this.gameObject;
             nextTime = Time.time+ bulletTime;
         }
         
+    }
+
+    public void damage(int hitNumber)
+    {
+
+        currHP -= hitNumber;
+        HPSlider.value = currHP / HP;
+        if (currHP <= 0)
+        {
+            GameObject.Instantiate(deadFX, this.transform.position, Quaternion.identity);
+
+            currHP = 0;
+            gameOver();          
+        }
+    }
+
+    private void gameOver()
+    {
+        GameObject.Destroy(this.gameObject);
     }
 }

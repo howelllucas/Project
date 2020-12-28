@@ -84,7 +84,7 @@ public class PlayerTank : MonoBehaviour
         if (currHP <= 0)
         {
             GameObject.Instantiate(deadFX, this.transform.position, Quaternion.identity);
-
+            GameObject.Destroy(this.gameObject);
             currHP = 0;
             gameOver();          
         }
@@ -92,6 +92,6 @@ public class PlayerTank : MonoBehaviour
 
     private void gameOver()
     {
-        GameObject.Destroy(this.gameObject);
+        UIMain.Instance.gameOver(false);
     }
 }

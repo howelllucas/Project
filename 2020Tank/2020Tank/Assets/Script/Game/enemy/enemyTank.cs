@@ -17,7 +17,7 @@ public class enemyTank: MonoBehaviour
     //移动速度
     private float moveSpeed = 5.0f;
     //子弹间隔时间
-    float bulletTime = 0.5f;
+    float bulletTime = 1.5f;
     //下一次发射时间
     float nextTime = 0;
     public GameObject bulletPrefab;
@@ -35,6 +35,8 @@ public class enemyTank: MonoBehaviour
     void Start()
     {
         playerTank = GameObject.FindGameObjectWithTag("Player");
+        //添加敌人到的列表
+        EnterTrigger.enemyArr.Add(this.gameObject);
         
         enemyHP = 30;
         currHP = enemyHP;
@@ -91,7 +93,7 @@ public class enemyTank: MonoBehaviour
         if (currHP <= 0)
         {
             currHP = 0;
-            
+            EnterTrigger.enemyArr.Remove(this.gameObject);
             GameObject.Destroy(this.gameObject);
             GameObject.Instantiate(deadFX, this.transform.position, Quaternion.identity);
         }

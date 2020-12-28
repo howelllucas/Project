@@ -1108,8 +1108,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 8
-  bullet: {fileID: 0}
+  bulletPrefab: {fileID: 0}
   bulletCreatPoint: {fileID: 0}
+  firePrefab: {fileID: 0}
+  HP: 100
+  deadFX: {fileID: 0}
+  HPSlider: {fileID: 0}
 --- !u!1 &1000013854952252
 GameObject:
   m_ObjectHideFlags: 0

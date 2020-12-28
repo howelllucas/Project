@@ -22,7 +22,7 @@ public class EnterTrigger : MonoBehaviour
     
     void Update()
     {
-        Debug.Log(enemyArr.Count);
+        //Debug.Log(enemyArr.Count);
         //关卡判断
         if (enemyArr.Count<=0)
         {

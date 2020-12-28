@@ -14,13 +14,13 @@ public class PlayerTank : MonoBehaviour
     //坦克开火特效预制体
     public GameObject firePrefab;
     //子弹间隔时间
-    float bulletTime=0.5f;
+    public float bulletTime=0.5f;
     //下一次发射时间
     float nextTime=0 ;
     //总血量
     public float HP;
     //当前血量
-    private float currHP;
+    public float currHP;
     //死亡特效
     public GameObject deadFX;
     //血条
@@ -63,7 +63,7 @@ public class PlayerTank : MonoBehaviour
         Vector3 Dir = this.transform.forward * moveSpeed * Time.deltaTime;
         rid.MovePosition(this.transform.position+ Dir);
     }
-    void creatBullet()
+    public void creatBullet()
     {
         
         if (Time.time> nextTime)
@@ -92,6 +92,7 @@ public class PlayerTank : MonoBehaviour
 
     private void gameOver()
     {
-        UIMain.Instance.gameOver(false);
+        
+        UIMain.Instance.gameOver(true);
     }
 }

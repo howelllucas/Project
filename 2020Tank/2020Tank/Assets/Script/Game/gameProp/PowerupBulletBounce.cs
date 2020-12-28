@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerupBulletBounce : MonoBehaviour
+public class PowerupBulletBounce : porpBase
 {
-    // Start is called before the first frame update
-    void Start()
+    
+   
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.gameObject.tag=="Player")
+        {
+            other.GetComponent<PlayerTank>().moveSpeed += 2;
+            Porp.resetPorpCreat();
+            GameObject.Destroy(this.gameObject);
+            Debug.Log("加速");
+        }
     }
 }

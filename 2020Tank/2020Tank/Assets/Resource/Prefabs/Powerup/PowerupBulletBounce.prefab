@@ -122,6 +122,7 @@ GameObject:
   - component: {fileID: 65000012185149634}
   - component: {fileID: 54000011390207216}
   - component: {fileID: 95000012186074224}
+  - component: {fileID: 114880163592630944}
   m_Layer: 2
   m_Name: PowerupBulletBounce
   m_TagString: Untagged
@@ -193,6 +194,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114880163592630944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010293127126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da45db4426014437c8d4369296f32cea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Porp: {fileID: 0}
 --- !u!1 &1000010497345756
 GameObject:
   m_ObjectHideFlags: 0

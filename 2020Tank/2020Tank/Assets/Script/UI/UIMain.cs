@@ -18,7 +18,7 @@ public class UIMain : MonoBehaviour
     
     public void gameOver(bool istue)
     {
-        gameoverUI.SetActive(true);
+        gameoverUI.SetActive(istue);
         Time.timeScale = 0;
     }
 }

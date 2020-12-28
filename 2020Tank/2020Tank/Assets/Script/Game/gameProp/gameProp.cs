@@ -4,21 +4,29 @@ using UnityEngine;
 
 public class gameProp : MonoBehaviour
 {
-    public GameObject[] gameObjects;
-    public GameObject[] gamePorp;
+    
+    public GameObject gamePorp;
 
     void Start()
     {
-        for (int i = 0; i < gameObjects.Length; i++)
-        {
-            GameObject.Instantiate(gamePorp[i], gameObjects[i].transform.position, Quaternion.identity);
-        }
-        
-    }
+        creatPorp01();
 
-    
-    void Update()
+
+    }
+    void creatPorp01()
     {
-        
+
+        GameObject go = GameObject.Instantiate(gamePorp, this.transform.position, Quaternion.identity);
+        go.GetComponent<porpBase>().Porp = this;
+    }
+    //协程控制道具间隔10秒生成
+    public void resetPorpCreat()
+    {
+        StartCoroutine(resetPorp());
+    }
+    IEnumerator resetPorp()
+    {
+        yield return new WaitForSeconds(10);
+        creatPorp01();
     }
 }

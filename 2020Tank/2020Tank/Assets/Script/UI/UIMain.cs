@@ -9,16 +9,18 @@ public class UIMain : MonoBehaviour
     public GameObject gameoverUI;
     void Awake()
     {
+        
         if (Instance==null)
         {
             Instance = this;
         }
-        
+        gameoverUI.SetActive(false);
     }
     
     public void gameOver(bool istue)
     {
-        gameoverUI.SetActive(istue);
+        Debug.Log("aaaaaa");
+        gameoverUI.SetActive(true);
         Time.timeScale = 0;
     }
 }

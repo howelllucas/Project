@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 65000012185149634}
   - component: {fileID: 54000011390207216}
   - component: {fileID: 95000013323926802}
-  - component: {fileID: 114719203562714854}
+  - component: {fileID: 114438256181418912}
   m_Layer: 2
   m_Name: PowerupBulletPower
   m_TagString: Untagged
@@ -84,7 +84,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114719203562714854
+--- !u!114 &114438256181418912
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010293127126}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e799a96afb164d0695db8f0030a99e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c5d8ae78b091471ca4f75ea768641af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Porp: {fileID: 0}

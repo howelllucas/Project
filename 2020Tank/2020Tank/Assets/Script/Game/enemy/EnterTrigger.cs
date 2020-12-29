@@ -47,6 +47,6 @@ public class EnterTrigger : MonoBehaviour
     }
     void gameOver()
     {
-        UIMain.Instance.gameOver(true);
+        uiMain1.Instance.gameOver();
     }
 }

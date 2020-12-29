@@ -9,14 +9,14 @@ public class UIMain : MonoBehaviour
     public GameObject gameoverUI;
     void Awake()
     {
-        
-        if (Instance==null)
+
+        if (Instance == null)
         {
             Instance = this;
         }
         gameoverUI.SetActive(false);
     }
-    
+
     public void gameOver(bool istue)
     {
         Debug.Log("aaaaaa");

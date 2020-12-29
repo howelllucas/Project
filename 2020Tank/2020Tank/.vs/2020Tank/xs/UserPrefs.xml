@@ -1,16 +1,11 @@
 ﻿<Properties StartupConfiguration="{1C3EB42B-8FCF-A6AE-FA96-C014B5BDB18C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/UI/UIMain.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Game/gameProp/PowerupHealth.cs">
     <Files>
-      <File FileName="Assets/Script/Game/Player/PlayerTank.cs" Line="96" Column="40" />
-      <File FileName="Assets/Script/Game/bullet/bullet.cs" />
-      <File FileName="Assets/Script/Game/enemy/EnterTrigger.cs" />
-      <File FileName="Assets/Script/Game/enemy/enemyTank.cs" />
-      <File FileName="Assets/Script/UI/UIMain.cs" Line="6" Column="2" />
-      <File FileName="Assets/Script/UI/gameOverPlane.cs" Line="21" Column="42" />
-      <File FileName="Assets/Script/Game/gameProp/gameProp.cs" />
-      <File FileName="Assets/Script/Game/gameProp/PowerupBulletPower.cs" />
-      <File FileName="Assets/Script/Game/gameProp/PowerupHealth.cs" />
-      <File FileName="Assets/Script/Game/gameProp/PowerupShield.cs" />
+      <File FileName="Assets/Script/Game/enemy/EnterTrigger.cs" Line="50" Column="37" />
+      <File FileName="Assets/Script/Game/gameProp/PowerupBulletBounce.cs" Line="29" Column="12" />
+      <File FileName="Assets/Script/Game/gameProp/PowerupBulletPower.cs" Line="6" Column="43" />
+      <File FileName="Assets/Script/Game/gameProp/PowerupShield.cs" Line="7" Column="5" />
+      <File FileName="Assets/Script/Game/gameProp/PowerupHealth.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,10 +16,10 @@
                 <Node name="Game" expanded="True">
                   <Node name="bullet" expanded="True" />
                   <Node name="enemy" expanded="True" />
-                  <Node name="gameProp" expanded="True" />
-                  <Node name="Player" expanded="True">
-                    <Node name="PlayerTank.cs" selected="True" />
+                  <Node name="gameProp" expanded="True">
+                    <Node name="PowerupHealth.cs" selected="True" />
                   </Node>
+                  <Node name="Player" expanded="True" />
                 </Node>
                 <Node name="UI" expanded="True" />
               </Node>
@@ -36,7 +31,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e766cb6b-8a43-44f8-826c-dfd07cc23a26" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c4ece32d-38c3-41c2-8105-87bd61aeb9a1" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 65000012185149634}
   - component: {fileID: 54000011390207216}
   - component: {fileID: 95000014185611394}
-  - component: {fileID: 114150945879925342}
+  - component: {fileID: 114958930359368180}
   m_Layer: 2
   m_Name: PowerupShield
   m_TagString: Untagged
@@ -84,7 +84,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114150945879925342
+--- !u!114 &114958930359368180
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,7 +93,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010293127126}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e799a96afb164d0695db8f0030a99e5, type: 3}
+  m_Script: {fileID: 11500000, guid: 86a0719619552458e8b039dd75a6408a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Porp: {fileID: 0}

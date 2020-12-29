@@ -16,8 +16,5 @@ public class gameOverPlane : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(1);
     }
-    private void Start()
-    {
-        this.gameObject.SetActive(false);
-    }
+    
 }

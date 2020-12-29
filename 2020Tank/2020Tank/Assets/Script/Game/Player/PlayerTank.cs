@@ -47,10 +47,6 @@ public class PlayerTank : MonoBehaviour
             moveDir.y = Input.GetAxis("Vertical");
             Move(moveDir);
         }
-        if (Input.GetKey(KeyCode.Space))
-        {
-            creatBullet();
-        }
         
     }
 
@@ -92,7 +88,8 @@ public class PlayerTank : MonoBehaviour
 
     private void gameOver()
     {
-        
-        UIMain.Instance.gameOver(true);
+
+        uiMain1.Instance.gameOver();
     }
+    
 }

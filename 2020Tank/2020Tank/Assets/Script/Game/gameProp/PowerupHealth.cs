@@ -11,6 +11,7 @@ public class PowerupHealth : porpBase
     {
         if (other.gameObject.tag=="Player")
         {
+            other.GetComponent<buffShow>().showHp();
             HPSlider = other.transform.Find("HUD/Canvas/Slider").GetComponent<Slider>();
             //道具效果
             other.GetComponent<PlayerTank>().currHP += 10;
@@ -18,7 +19,11 @@ public class PowerupHealth : porpBase
             {
                 HPSlider.value = other.GetComponent<PlayerTank>().currHP / other.GetComponent<PlayerTank>().HP;
             }
-            else HPSlider.value = 1;
+            else
+            {
+                other.GetComponent<PlayerTank>().currHP = other.GetComponent<PlayerTank>().HP;
+                HPSlider.value = 1;
+            } 
 
 
             Porp.resetPorpCreat();

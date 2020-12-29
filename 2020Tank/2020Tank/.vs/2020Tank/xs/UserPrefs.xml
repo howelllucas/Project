@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{1C3EB42B-8FCF-A6AE-FA96-C014B5BDB18C}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Game/gameProp/PowerupHealth.cs">
     <Files>
-      <File FileName="Assets/Script/Game/enemy/EnterTrigger.cs" Line="50" Column="37" />
-      <File FileName="Assets/Script/Game/gameProp/PowerupBulletBounce.cs" Line="29" Column="12" />
-      <File FileName="Assets/Script/Game/gameProp/PowerupBulletPower.cs" Line="6" Column="43" />
-      <File FileName="Assets/Script/Game/gameProp/PowerupShield.cs" Line="7" Column="5" />
-      <File FileName="Assets/Script/Game/gameProp/PowerupHealth.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/Game/gameProp/PowerupBulletBounce.cs" Line="15" Column="13" />
+      <File FileName="Assets/Script/Game/gameProp/porpBase.cs" Line="11" Column="5" />
+      <File FileName="Assets/Script/Game/Player/buffShow.cs" Line="33" Column="6" />
+      <File FileName="Assets/Script/Game/Player/PlayerTank.cs" Line="17" Column="28" />
+      <File FileName="Assets/Script/Game/gameProp/PowerupHealth.cs" Line="24" Column="95" />
+      <File FileName="Assets/Script/Game/gameProp/PowerupShield.cs" Line="17" Column="26" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,14 +15,11 @@
             <Node name="Assets" expanded="True">
               <Node name="Script" expanded="True">
                 <Node name="Game" expanded="True">
-                  <Node name="bullet" expanded="True" />
-                  <Node name="enemy" expanded="True" />
                   <Node name="gameProp" expanded="True">
                     <Node name="PowerupHealth.cs" selected="True" />
                   </Node>
                   <Node name="Player" expanded="True" />
                 </Node>
-                <Node name="UI" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -31,7 +29,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c4ece32d-38c3-41c2-8105-87bd61aeb9a1" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e766cb6b-8a43-44f8-826c-dfd07cc23a26" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

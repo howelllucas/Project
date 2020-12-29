@@ -14,7 +14,7 @@ public class PowerupShield : porpBase
             other.GetComponent<PlayerTank>().currHP += 10;
             Porp.resetPorpCreat();
             GameObject.Destroy(this.gameObject);
-            Debug.Log("加攻速");
+            Debug.Log("防御");
         }
     }
 }

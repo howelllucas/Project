@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletEXPrefab: {fileID: 183222, guid: f2ee009e61b1177489331d95174281b1, type: 3}
+  bulletEXPrefab2: {fileID: 180702, guid: 8eb9d7a650f0e4d4490e31a1ee87f621, type: 3}
   Owner: {fileID: 0}
   bulletSpeed: 24
   demage: 10

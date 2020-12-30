@@ -13,6 +13,8 @@ public class PlayerTank : MonoBehaviour
     public Transform bulletCreatPoint;
     //坦克开火特效预制体
     public GameObject firePrefab;
+    //破防特效预制体
+    public GameObject hitDefenceBad;
     //子弹间隔时间
     public float bulletTime=0.5f;
     //下一次发射时间
@@ -25,11 +27,21 @@ public class PlayerTank : MonoBehaviour
     public GameObject deadFX;
     //血条
     public Slider HPSlider;
+    //防御值
+    public float defence;
+    //防御条
+    Slider defenceSlider;
+    //破防次数
+    int hitDefenceDad;
+    
     void Awake()
     {
         rid = this.transform.GetComponent<Rigidbody>();
+        defenceSlider=this.transform.Find("Shield/Slider").GetComponent<Slider>();
+
         HP = 40;
         currHP = HP;
+        hitDefenceDad = 0;
     }
 
     void Start()
@@ -74,16 +86,45 @@ public class PlayerTank : MonoBehaviour
 
     public void damage(int hitNumber)
     {
-
-        currHP -= hitNumber;
-        HPSlider.value = currHP / HP;
-        if (currHP <= 0)
+        //有防御的判断
+        if (defence>0)
         {
-            GameObject.Instantiate(deadFX, this.transform.position, Quaternion.identity);
-            GameObject.Destroy(this.gameObject);
-            currHP = 0;
-            gameOver();          
+            defence -= hitNumber;
+            if (defence/20==0)
+            {
+                defenceSlider.value = 1;
+            }
+            if (defence / 20 == 1)
+            {
+                defenceSlider.value = 2;
+            }
+            if (defence / 20 == 2)
+            {
+                defenceSlider.value = 3;
+            }
+
+
         }
+        else
+        {
+            //判断是否第一次打破防御
+            defenceSlider.value = 0;
+            if (hitDefenceDad==0)
+            {
+                GameObject.Instantiate(hitDefenceBad, this.transform.position, Quaternion.identity);
+                hitDefenceDad++;
+            }
+            currHP -= hitNumber;
+            HPSlider.value = currHP / HP;
+            if (currHP <= 0)
+            {
+                GameObject.Instantiate(deadFX, this.transform.position, Quaternion.identity);
+                GameObject.Destroy(this.gameObject);
+                currHP = 0;
+                gameOver();
+            }
+        }
+        
     }
 
     private void gameOver()

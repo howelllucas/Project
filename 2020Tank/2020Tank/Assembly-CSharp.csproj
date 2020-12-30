@@ -108,6 +108,7 @@
     <Compile Include="Assets\Script\Game\enemy\enemyTank.cs" />
     <Compile Include="Assets\Script\Game\enemy\EnterTrigger.cs" />
     <Compile Include="Assets\Script\Game\FollowTarget.cs" />
+    <Compile Include="Assets\Script\Game\FXDestory.cs" />
     <Compile Include="Assets\Script\Game\gameProp\gameProp.cs" />
     <Compile Include="Assets\Script\Game\gameProp\porpBase.cs" />
     <Compile Include="Assets\Script\Game\gameProp\PowerupBulletBounce.cs" />

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4000011763285646}
   - component: {fileID: 199000011202787200}
   - component: {fileID: 198000011456477012}
+  - component: {fileID: 114389907638305100}
   m_Layer: 0
   m_Name: FXShot
   m_TagString: Untagged
@@ -4738,3 +4739,15 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &114389907638305100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000011513120438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8193e40ef3d0a4507bd6298e8c76f22a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

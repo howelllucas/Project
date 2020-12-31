@@ -5,7 +5,8 @@ using UnityEngine;
 public class PowerupBulletBounce : porpBase
 {
 
-
+    
+    
     private void OnTriggerEnter(Collider other)
     {
 

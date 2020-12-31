@@ -8,6 +8,8 @@ public class buffShow : MonoBehaviour
     public GameObject defence;
     public GameObject movespeed;
     public GameObject hp;
+    //摇杆
+    public ETCJoystick joystick;
     private void Start()
     {
         
@@ -28,7 +30,8 @@ public class buffShow : MonoBehaviour
     public void showMovespeed()
     {
         movespeed.SetActive(true);
-        movespeed.transform.GetComponentInParent<PlayerTank>().moveSpeed += 12f;
+        joystick.tmSpeed += 10f;
+        //movespeed.transform.GetComponentInParent<PlayerTank>().moveSpeed += 12f;
         Invoke("hideMovespeed", 5);
     }
     public void showHp()
@@ -49,7 +52,8 @@ public class buffShow : MonoBehaviour
     }
     public void hideMovespeed()
     {
-        movespeed.transform.GetComponentInParent<PlayerTank>().moveSpeed -= 12f;
+        joystick.tmSpeed -= 10f;
+        //movespeed.transform.GetComponentInParent<PlayerTank>().moveSpeed -= 12f;
         movespeed.SetActive(false);
     }
     public void hideHp()

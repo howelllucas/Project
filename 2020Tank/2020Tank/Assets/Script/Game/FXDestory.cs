@@ -16,9 +16,9 @@ public class FXDestory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (particle.isPlaying!=true)
+        if (particle.IsAlive() == false)
         {
-            GameObject.Destroy(this);
+            Destroy(gameObject);
         }
     }
 }

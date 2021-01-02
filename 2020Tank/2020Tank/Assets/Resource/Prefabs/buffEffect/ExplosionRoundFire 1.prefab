@@ -10,10 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 407600}
   - component: {fileID: 19811046}
+  - component: {fileID: 114374912706032080}
   - component: {fileID: 19920672}
   - component: {fileID: 8235076}
   m_Layer: 0
-  m_Name: ExplosionRoundFire
+  m_Name: ExplosionRoundFire 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4627,6 +4628,18 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &114374912706032080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8193e40ef3d0a4507bd6298e8c76f22a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!199 &19920672
 ParticleSystemRenderer:
   serializedVersion: 6

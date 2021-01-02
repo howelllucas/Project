@@ -9416,7 +9416,7 @@ GameObject:
   - component: {fileID: 19848222}
   - component: {fileID: 19920358}
   m_Layer: 0
-  m_Name: MagicPillarBlastBlue
+  m_Name: MagicPillarBlastBlue 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9431,7 +9431,7 @@ Transform:
   m_GameObject: {fileID: 159062}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 8.928596, y: 0.0000019740205, z: -5.5197616}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 457146}
   - {fileID: 467770}

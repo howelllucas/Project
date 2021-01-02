@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnterTrigger : MonoBehaviour
 {
@@ -12,11 +13,13 @@ public class EnterTrigger : MonoBehaviour
     private int Level;
     //总波次
     public int intollLevel;
-    
+    //ui显示波次
+    public GameObject UILevel;
     void Start()
     {
         creatEnemyTank();
-        Level = 1;
+        Level = intollLevel;
+        UILevel.GetComponent<Text>().text = intollLevel.ToString();
     }
 
     
@@ -27,12 +30,14 @@ public class EnterTrigger : MonoBehaviour
         if (enemyArr.Count<=0)
         {
             //游戏结束，玩家胜利
-            Debug.Log("玩家胜利");
+            
             creatEnemyTank();
-            Level++;
-            if (Level>=intollLevel)
+            Level--;
+            UILevel.GetComponent<Text>().text = Level.ToString();
+            if (Level==0)
             {
-                gameOver();
+                gameOverWin();
+                Debug.Log("玩家胜利");
             }
         }
     }
@@ -48,5 +53,9 @@ public class EnterTrigger : MonoBehaviour
     void gameOver()
     {
         uiMain1.Instance.gameOver();
+    }
+    void gameOverWin()
+    {
+        uiMain1.Instance.gameOverWin();
     }
 }

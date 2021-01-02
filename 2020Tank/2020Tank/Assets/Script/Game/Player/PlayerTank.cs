@@ -11,10 +11,13 @@ public class PlayerTank : MonoBehaviour
     public float moveSpeed = 8.0f;
     public GameObject bulletPrefab;
     public Transform bulletCreatPoint;
+    public GameObject UIHPCount;
     //坦克开火特效预制体
     public GameObject firePrefab;
     //破防特效预制体
     public GameObject hitDefenceBad;
+    //重生特效
+    public GameObject resetLifeFX;
     //子弹间隔时间
     public float bulletTime=0.5f;
     //下一次发射时间
@@ -33,7 +36,14 @@ public class PlayerTank : MonoBehaviour
     Slider defenceSlider;
     //破防次数
     int hitDefenceDad;
-    
+    //生命格数
+    int HPcount;
+    //出生点
+    Vector3 pos01;
+    //落地点
+    Vector3 pos02;
+    //黑屏
+    public GameObject blackMask;
     void Awake()
     {
         rid = this.transform.GetComponent<Rigidbody>();
@@ -42,12 +52,16 @@ public class PlayerTank : MonoBehaviour
         HP = 40;
         currHP = HP;
         hitDefenceDad = 0;
+        HPcount = 0;
+        UIHPCount.GetComponent<Slider>().value = HPcount;
+        
     }
 
     void Start()
     {
         Camera.main.GetComponent<FollowTarget>().Target = this.transform;
         
+
     }
 
     
@@ -59,6 +73,7 @@ public class PlayerTank : MonoBehaviour
             moveDir.y = Input.GetAxis("Vertical");
             Move(moveDir);
         }
+        
         
     }
 
@@ -118,10 +133,30 @@ public class PlayerTank : MonoBehaviour
             HPSlider.value = currHP / HP;
             if (currHP <= 0)
             {
-                GameObject.Instantiate(deadFX, this.transform.position, Quaternion.identity);
-                GameObject.Destroy(this.gameObject);
+                HPcount++;
+                UIHPCount.GetComponent<Slider>().value = HPcount;
                 currHP = 0;
-                gameOver();
+                
+                
+                if (HPcount==3)
+                {
+                    GameObject.Instantiate(deadFX, this.transform.position, Quaternion.identity);
+                    GameObject.Destroy(this.gameObject);
+                    gameOver();
+                    blackMask.SetActive(false);
+                    
+                }
+                //死亡方法
+                GameObject.Instantiate(deadFX, this.transform.position, Quaternion.identity);
+                
+                this.gameObject.SetActive(false);
+                //黑屏
+                blackMask.SetActive(true);
+
+                //重生方法
+                Invoke("resetLife",1);
+
+
             }
         }
         
@@ -131,6 +166,18 @@ public class PlayerTank : MonoBehaviour
     {
 
         uiMain1.Instance.gameOver();
+    }
+    private void resetLife()
+    {
+        
+        currHP = HP;
+       
+        this.gameObject.SetActive(true);
+        this.transform.position = new Vector3(0, 0, 0);
+        GameObject.Instantiate(resetLifeFX, this.transform.position, resetLifeFX.transform.rotation);
+        
+        
+        blackMask.SetActive(false);
     }
     
 }

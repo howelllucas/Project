@@ -1,0 +1,4 @@
+#Fri Jan 01 12:18:22 CST 2021
+base.0=/Users/lucas/git/2020Tank/2020Tank/Temp/gradleOut/build/intermediates/transforms/dexMerger/release/0
+path.0=classes.dex
+renamed.0=classes.dex

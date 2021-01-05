@@ -23422,8 +23422,9 @@ GameObject:
   - component: {fileID: 404992}
   - component: {fileID: 19848870}
   - component: {fileID: 19917164}
+  - component: {fileID: 114624836231340042}
   m_Layer: 0
-  m_Name: TallExplosionFire
+  m_Name: TallExplosionFire 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28100,3 +28101,15 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &114624836231340042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8193e40ef3d0a4507bd6298e8c76f22a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

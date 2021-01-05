@@ -9,7 +9,7 @@ public class gameProp : MonoBehaviour
 
     void Start()
     {
-        creatPorp01();
+        creatPorp01(); 
 
 
     }

@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Import Assets/Scripts/enemy.cs">
+    <Files>
+      <File FileName="Assets/Import Assets/Scripts/enemy.cs" Line="13" Column="23" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Tower Defense" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Import Assets" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="enemy.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8bdfb8eb-fcac-476c-8f96-e16c23cbc5f8" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

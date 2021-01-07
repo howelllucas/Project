@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets\enemySpawner.cs" />
     <Compile Include="Assets\Import Assets\Scripts\enemy.cs" />
+    <Compile Include="Assets\Import Assets\Scripts\turretDate.cs" />
     <Compile Include="Assets\Import Assets\Scripts\Wave.cs" />
     <Compile Include="Assets\Import Assets\Scripts\wayPoint.cs" />
     <Reference Include="UnityEngine.Purchasing">

@@ -37,9 +37,22 @@ namespace ns
             {
                 index++;
             }
+            if (index>= wayTrans.Length-1)
+            {
+                finishEnd();
+            }
             
         }
-
+        void finishEnd()
+        {
+            
+            GameObject.Destroy(this.gameObject);
+        }
+        void OnDestroy()
+        {
+            enemySpawner.aliveEnemyCount--;
+            
+        }
     }
 
 }

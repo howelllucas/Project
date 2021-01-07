@@ -10,7 +10,7 @@ namespace ns
     ///</summary>
     public class enemy : MonoBehaviour
     {
-        int Speed = 10;
+        public int Speed = 10;
         Transform[] wayTrans;
         int index = 0;
         Rigidbody rid;
@@ -26,13 +26,13 @@ namespace ns
 
         private void Move()
         {
-            if (index> wayTrans.Length-1)
+            if (index>= wayTrans.Length-1)
             {
                 return;
             }
             this.transform.LookAt(wayTrans[index + 1]);
-            Vector3 Dir = this.transform.forward * Speed * Time.deltaTime;
-            rid.MovePosition(this.transform.position + Dir);
+            this.transform.position += this.transform.forward * Speed * Time.deltaTime;
+            
             if (Vector3.Distance(this.transform.position, wayTrans[index+1].position)<0.2f)
             {
                 index++;

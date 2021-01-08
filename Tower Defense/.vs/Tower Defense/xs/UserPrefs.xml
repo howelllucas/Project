@@ -1,17 +1,21 @@
 ﻿<Properties StartupConfiguration="{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Import Assets/Scripts/turretDate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Import Assets/Scripts/CameraMove.cs">
     <Files>
       <File FileName="Assets/enemySpawner.cs" Line="21" Column="10" />
-      <File FileName="Assets/Import Assets/Scripts/enemy.cs" />
-      <File FileName="Assets/Import Assets/Scripts/turretDate.cs" Line="18" Column="6" />
+      <File FileName="Assets/Import Assets/Scripts/enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets/Import Assets/Scripts/turretDate.cs" Line="4" Column="1" />
+      <File FileName="Assets/Import Assets/Scripts/CameraMove.cs" Line="69" Column="22" />
+      <File FileName="Assets/BuildManager.cs" Line="16" Column="45" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Tower Defense" expanded="True">
-            <Node name="Assets" expanded="True" selected="True">
+            <Node name="Assets" expanded="True">
               <Node name="Import Assets" expanded="True">
-                <Node name="Scripts" expanded="True" />
+                <Node name="Scripts" expanded="True">
+                  <Node name="CameraMove.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -21,7 +25,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="606ac932-8b05-4d01-ae90-1f291d6614c0" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4957de69-2c21-4ad8-af25-be51c279d4d1" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

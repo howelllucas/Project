@@ -7,6 +7,7 @@ namespace ns
     ///<summary>
     ///
     ///</summary>
+    [System.Serializable]
     public class turretDate 
     {
         public GameObject turretPrefab;

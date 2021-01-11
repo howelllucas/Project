@@ -53,6 +53,11 @@ namespace ns
             enemySpawner.aliveEnemyCount--;
             
         }
+
+        public void takeDemage(float demage)
+        {
+
+        }
     }
 
 }

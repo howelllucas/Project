@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8398917775592975720}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Missile Launcher up
   m_TagString: Untagged
   m_Icon: {fileID: 0}

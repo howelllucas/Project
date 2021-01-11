@@ -87,8 +87,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5652332127909864267}
-  m_Layer: 0
-  m_Name: Laser Beamer up 1
+  m_Layer: 10
+  m_Name: Laser Beamer up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

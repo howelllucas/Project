@@ -4573,13 +4573,14 @@ MonoBehaviour:
   scaleFactor: 1
   maxDistance: 20
   minDistance: 3
-  useMouse: 0
+  useMouse: 1
   xMin: -35
   xMax: 5
   zMin: -55
   zMax: -15
-  turret: {fileID: 0}
+  enemyManager: {fileID: 0}
   touchposition: {x: 0, y: 0, z: 0}
+  turret: {fileID: 100002, guid: 9df910d76380dc649b89daacf5c8d0ac, type: 3}
 --- !u!1 &540581876
 GameObject:
   m_ObjectHideFlags: 0
@@ -8000,7 +8001,7 @@ GameObject:
   - component: {fileID: 944661590}
   - component: {fileID: 944661589}
   - component: {fileID: 944661588}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

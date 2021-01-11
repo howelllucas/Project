@@ -2,10 +2,10 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Import Assets/Scripts/CameraMove.cs">
     <Files>
       <File FileName="Assets/enemySpawner.cs" Line="21" Column="10" />
-      <File FileName="Assets/Import Assets/Scripts/enemy.cs" Line="1" Column="1" />
-      <File FileName="Assets/Import Assets/Scripts/turretDate.cs" Line="4" Column="1" />
-      <File FileName="Assets/Import Assets/Scripts/CameraMove.cs" Line="69" Column="22" />
-      <File FileName="Assets/BuildManager.cs" Line="16" Column="45" />
+      <File FileName="Assets/Import Assets/Scripts/enemy.cs" />
+      <File FileName="Assets/Import Assets/Scripts/turretDate.cs" Line="20" Column="27" />
+      <File FileName="Assets/Import Assets/Scripts/CameraMove.cs" Line="152" Column="17" />
+      <File FileName="Assets/BuildManager.cs" Line="12" Column="38" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,7 +25,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4957de69-2c21-4ad8-af25-be51c279d4d1" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="31d26018-d2dc-4903-a15b-3652d3b1e227" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

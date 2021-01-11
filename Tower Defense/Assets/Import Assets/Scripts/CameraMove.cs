@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 namespace ns
 {
     public class CameraMove : MonoBehaviour
@@ -37,15 +38,19 @@ namespace ns
         private bool m_IsSingleFinger;
 
         //定义存放cube对象
-        public GameObject turret;
+        public BuildManager enemyManager;
         //存储移动三维坐标值
         public Vector3 touchposition;
+        //实例化当前选择的炮台
+        public GameObject turret;
 
         //初始化游戏信息设置  
         void Start()
         {
             m_Camera = this.GetComponent<Camera>();
             m_CameraOffset = m_Camera.transform.position;
+
+            //turret = enemyManager.GetComponent<BuildManager>().selectedTurretDate.turretPrefab;
         }
 
         void Update()
@@ -55,13 +60,12 @@ namespace ns
             //判断触摸数量为单点触摸  
             if (Input.touchCount == 1)
             {
-                Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(i).position);
-                RaycastHit hit;
-                bool isCollider = Physics.Raycast(ray, out hit, 1000, LayerMask.GetMask("UI"));
+                
+                
                 //判断是否触摸到ui层，并且执行拖拽建造炮塔命令
-                if ((isCollider && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)) //[color=Red]如果点击手指touch了  并且手指touch的状态为移动的[/color]
+                if ((EventSystem.current.IsPointerOverGameObject() && Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Moved)) //[color=Red]如果点击手指touch了  并且手指touch的状态为移动的[/color]
                 {
-                    turret = hit.collider.gameObject;
+                    
 
                     //实例化炮塔
                     int i = 0;
@@ -72,7 +76,7 @@ namespace ns
                             
 
 
-                                Instantiate(particle, transform.position, transform.rotation) as GameObject;
+                                GameObject.Instantiate(turret, transform.position, transform.rotation) ;
 
                         }
                         ++i;
@@ -116,17 +120,53 @@ namespace ns
             //用鼠标的  
             if (useMouse)
             {
-                distance -= Input.GetAxis("Mouse ScrollWheel") * scaleFactor;
-                distance = Mathf.Clamp(distance, minDistance, maxDistance);
-                if (Input.GetMouseButtonDown(0))
+                if (EventSystem.current.IsPointerOverGameObject())
                 {
-                    lastSingleTouchPosition = Input.mousePosition;
-                    Debug.Log("GetMouseButtonDown:" + lastSingleTouchPosition);
+                    if (Input.GetMouseButtonUp(0))
+                    {
+
+                        //实例化炮塔
+
+                        //Invoke("creatTurret", 0.2f);
+                        //creatTurret();
+
+                        GameObject tur = this.transform.GetComponent<CameraMove>().turret;
+                        turret = GameObject.Instantiate(tur, Input.mousePosition, transform.rotation);
+
+
+                        //实例化出来的炮塔跟随移动
+                        turret.transform.position = this.m_Camera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, turret.transform.position.z));
+                        //Debug.Log("34444444444");
+                        //LayerMask mask = 1 << 8;
+                        //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                        //RaycastHit hit = new RaycastHit();
+                        //bool isCollider = Physics.Raycast(ray, out hit, Mathf.Infinity, mask.value);
+                        //Debug.Log(isCollider);
+                        //if (isCollider)
+                        //{
+                        //    Debug.Log(hit.collider.gameObject.name);
+                        //}
+                    }
+
                 }
-                if (Input.GetMouseButton(0))
+                
+                else 
                 {
-                    MoveCamera(Input.mousePosition);
+                    distance -= Input.GetAxis("Mouse ScrollWheel") * scaleFactor;
+                    distance = Mathf.Clamp(distance, minDistance, maxDistance);
+                    if (Input.GetMouseButtonDown(0))
+                    {
+                        lastSingleTouchPosition = Input.mousePosition;
+                        Debug.Log("GetMouseButtonDown:" + lastSingleTouchPosition);
+                    }
+                    if (Input.GetMouseButton(0))
+                    {
+                        MoveCamera(Input.mousePosition);
+                    }
                 }
+                
+                
+                
             }
 
 
@@ -180,6 +220,12 @@ namespace ns
             m_CameraOffset = new Vector3(Mathf.Clamp(m_CameraOffset.x, xMin, xMax), m_CameraOffset.y, Mathf.Clamp(m_CameraOffset.z, zMin, zMax));
             //Debug.Log(lastTouchPostion + "|" + currentTouchPosition + "|" + v);  
             lastSingleTouchPosition = scenePos;
+        }
+        //创建实例炮台
+        private void creatTurret()
+        {
+            GameObject tur = this.transform.GetComponent<CameraMove>().turret;
+            GameObject.Instantiate(tur, transform.position, transform.rotation);
         }
     }
 }

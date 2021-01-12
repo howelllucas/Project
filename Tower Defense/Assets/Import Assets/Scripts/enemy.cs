@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace ns
 {
@@ -12,14 +13,17 @@ namespace ns
     {
         public int Speed = 10;
         public float HP = 150;
+        private float tatulHP;
         Transform[] wayTrans;
         int index = 0;
         Rigidbody rid;
         public GameObject deadEffect;
+        public Slider slider;
         private void Awake()
         {
             wayTrans = wayPoint.tans;
             rid = this.transform.GetComponent<Rigidbody>();
+            tatulHP = HP;
         }
         private void Update()
         {
@@ -55,7 +59,7 @@ namespace ns
             enemySpawner.aliveEnemyCount--;
             
         }
-
+        //受到攻击
         public void takeDemage(float demage)
         {
             if (HP<=0)
@@ -63,6 +67,7 @@ namespace ns
                 return;
             }
             HP -= demage;
+            slider.value = (float)HP / tatulHP;
             if (HP <= 0)
             {
                 dead();

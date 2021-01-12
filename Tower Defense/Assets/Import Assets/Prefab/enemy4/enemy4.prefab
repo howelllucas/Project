@@ -105,3 +105,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 10
+  HP: 150
+  deadEffect: {fileID: 8215867475263746240, guid: 8b0e5b1c493d349c6b0cb40046bd3322,
+    type: 3}

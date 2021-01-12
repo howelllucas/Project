@@ -40,7 +40,7 @@ namespace ns
             if (vec.magnitude< distanceArriveTarget)
             {
                 target.GetComponent<enemy>().takeDemage(demage);
-                Des()
+                Des();
 
             }
         }

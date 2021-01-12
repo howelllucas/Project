@@ -11,9 +11,11 @@ namespace ns
     public class enemy : MonoBehaviour
     {
         public int Speed = 10;
+        public float HP = 150;
         Transform[] wayTrans;
         int index = 0;
         Rigidbody rid;
+        public GameObject deadEffect;
         private void Awake()
         {
             wayTrans = wayPoint.tans;
@@ -56,7 +58,21 @@ namespace ns
 
         public void takeDemage(float demage)
         {
-
+            if (HP<=0)
+            {
+                return;
+            }
+            HP -= demage;
+            if (HP <= 0)
+            {
+                dead();
+            }
+        }
+        private void dead()
+        {
+            GameObject eff= GameObject.Instantiate(deadEffect, transform.position, Quaternion.identity);
+            Destroy(eff, 1.5f);
+            Destroy(this.gameObject);
         }
     }
 

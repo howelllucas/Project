@@ -17,6 +17,9 @@ namespace ns
 
         public GameObject deadEffect;
 
+        //通过距离判断是否碰撞
+        public float distanceArriveTarget = 1.2f;
+        
         public void setTarget(Transform ta)
         {
             target = ta;
@@ -24,14 +27,28 @@ namespace ns
 
         private void Update()
         {
+            if (target==null)
+            {
+                Des();
+                return;  
+            }
             transform.LookAt(target);
             transform.Translate(Vector3.forward * speed * Time.deltaTime);
+
+            Vector3 vec = this.transform.position - target.position;
+
+            if (vec.magnitude< distanceArriveTarget)
+            {
+                target.GetComponent<enemy>().takeDemage(demage);
+                Des()
+
+            }
         }
 
-        private void OnTriggerEnter(Collider other)
+        private void Des()
         {
-            other.GetComponent<enemy>().takeDemage(demage);
-            GameObject.Instantiate(deadEffect, this.transform.position, Quaternion.identity);
+            GameObject ga = GameObject.Instantiate(deadEffect, this.transform.position, Quaternion.identity);
+            Destroy(ga, 1);
             Destroy(this.gameObject);
         }
 

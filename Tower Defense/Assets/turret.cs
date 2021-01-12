@@ -44,7 +44,7 @@ namespace ns
             timer += Time.deltaTime;
             if (enemyList.Count>0&&timer >= attackRateTime)
             {
-                timer -= attackRateTime;
+                timer = 0;
                 attack();
             }
             
@@ -52,8 +52,38 @@ namespace ns
 
         private void attack()
         {
-            GameObject bulletg= GameObject.Instantiate(bullet, bulletPoint.transform.position, bulletPoint.transform.rotation);
-            bulletg.GetComponent<bullet>().setTarget(enemyList[0].transform);
+            if (enemyList[0]==null)
+            {
+                //调用重新整理集合的方法
+                updateEnemyList();
+            }
+            if (enemyList.Count>0)
+            {
+                GameObject bulletg = GameObject.Instantiate(bullet, bulletPoint.transform.position, bulletPoint.transform.rotation);
+                bulletg.GetComponent<bullet>().setTarget(enemyList[0].transform);
+            }
+            else
+            {
+                timer = attackRateTime;
+
+            }
+        }
+            
+
+        private void updateEnemyList()
+        {
+            List<int> emptyList = new List<int>();
+            for (int i = 0; i < enemyList.Count; i++)
+            {
+                if (enemyList[i]==null)
+                {
+                    emptyList.Add(i);
+                }
+            }
+            for (int j = 0; j < emptyList.Count; j++)
+            {
+                enemyList.RemoveAt(emptyList[j] - j);
+            }
         }
 
     }

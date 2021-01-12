@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Import Assets/Scripts/enemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/turret.cs">
     <Files>
       <File FileName="Assets/Import Assets/Scripts/enemy.cs" Line="59" Column="1" />
-      <File FileName="Assets/Import Assets/Scripts/turretDate.cs" Line="20" Column="27" />
-      <File FileName="Assets/Import Assets/Scripts/CameraMove.cs" Line="95" Column="23" />
-      <File FileName="Assets/Import Assets/Scripts/BuildManager.cs" Line="59" Column="30" />
-      <File FileName="Assets/mapCube.cs" Line="14" Column="37" />
-      <File FileName="Assets/turret.cs" Line="47" Column="24" />
-      <File FileName="Assets/bullet.cs" Line="35" Column="38" />
+      <File FileName="Assets/Import Assets/Scripts/turretDate.cs" />
+      <File FileName="Assets/Import Assets/Scripts/CameraMove.cs" />
+      <File FileName="Assets/Import Assets/Scripts/BuildManager.cs" />
+      <File FileName="Assets/mapCube.cs" />
+      <File FileName="Assets/turret.cs" Line="58" Column="35" />
+      <File FileName="Assets/bullet.cs" Line="33" Column="24" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,10 +15,9 @@
           <Node name="Tower Defense" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Import Assets" expanded="True">
-                <Node name="Scripts" expanded="True">
-                  <Node name="enemy.cs" selected="True" />
-                </Node>
+                <Node name="Scripts" expanded="True" />
               </Node>
+              <Node name="turret.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -27,7 +26,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="77ad192e-151d-491c-b9d9-15f63c2ff24a" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="77f23a24-1b0f-4e98-b616-4e0d854bfae4" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Import Assets/Scripts/enemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/turret.cs">
     <Files>
       <File FileName="Assets/Import Assets/Scripts/enemy.cs" Line="70" Column="48" />
       <File FileName="Assets/Import Assets/Scripts/turretDate.cs" />
       <File FileName="Assets/Import Assets/Scripts/CameraMove.cs" />
       <File FileName="Assets/Import Assets/Scripts/BuildManager.cs" />
       <File FileName="Assets/mapCube.cs" />
-      <File FileName="Assets/turret.cs" Line="64" Column="68" />
-      <File FileName="Assets/bullet.cs" Line="43" Column="23" />
+      <File FileName="Assets/turret.cs" Line="66" Column="17" />
+      <File FileName="Assets/bullet.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

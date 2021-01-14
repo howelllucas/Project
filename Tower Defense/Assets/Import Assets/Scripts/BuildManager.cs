@@ -16,12 +16,23 @@ namespace ns
         public turretDate StandardTurret;
         //当前选择的是哪个（需要创建的）
         private turretDate selectedTurretDate;
+        //存储实例化的炮台用于确认点击隐藏升级ui
+        public GameObject newTurret;
 
         private int money = 1000;
 
         public Text text;
 
         public Animator ani;
+
+        //升级UI面板
+        public GameObject upgradeUi;
+        //升级按钮
+        public Button upgradeButton;
+        //存储地图块数据用于调用销毁方法
+        public mapCube cube;
+        //升级面板是否显示
+        private bool isShowUIgrade=false;
 
         private void changeMoney( int mon=0)
         {
@@ -43,6 +54,7 @@ namespace ns
                     {
                         //获取地图块数据
                         mapCube mc= hit.collider.gameObject.GetComponent<mapCube>();
+                        cube = mc;
                         if (selectedTurretDate!=null && mc.mapCubeGo==null)
                         {
                             //判断钱够不够
@@ -60,7 +72,26 @@ namespace ns
                         }
                         else if (mc.mapCubeGo != null)
                         {
-                            //升级
+                            //升级ui显示
+                            if (isShowUIgrade == false)
+                            {
+                                if (cube.turretLevel > 1)
+                                {
+                                    showUpgradeUI(cube.transform.position, false);
+                                }
+                                else
+                                {
+                                    showUpgradeUI(cube.transform.position, true);
+                                }
+                            }
+                            else
+                            {
+                                HideUpgradeUI();
+                                
+                            }
+                            
+                            
+                            
                         }
                         
                         
@@ -90,6 +121,52 @@ namespace ns
             {
                 selectedTurretDate = StandardTurret;
             }
+        }
+        //ui面板的显示
+        private void showUpgradeUI(Vector3 UIPoint, bool interactableBool=false)
+        {
+            isShowUIgrade = true;
+            upgradeUi.transform.position = UIPoint;
+            upgradeUi.SetActive(true);
+            if (money> selectedTurretDate.costUp&& interactableBool==true)
+            {
+                upgradeButton.interactable =true;
+            }
+            else
+            {
+                upgradeButton.interactable =false;
+            }
+            
+        }
+        private void HideUpgradeUI()
+        {
+            isShowUIgrade = false;
+            cube.turretLevel = 0;
+            upgradeUi.SetActive(false);
+            
+        }
+
+        //按钮点击事件
+        public void onUpgradeButton()
+        {
+            if (money < selectedTurretDate.costUp)
+            {
+                ani.SetTrigger("flicker");
+                upgradeButton.interactable = false;
+            }
+            else
+            {
+                changeMoney(-selectedTurretDate.costUp);
+                //升级操作
+                cube.upgradeTurret(selectedTurretDate.turretUpPrefab);
+            }
+          
+            
+        }
+        public void onDestoryButton()
+        {
+            HideUpgradeUI();
+            cube.destoryTurret();
         }
     }
     

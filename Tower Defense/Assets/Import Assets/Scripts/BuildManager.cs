@@ -159,6 +159,7 @@ namespace ns
                 changeMoney(-selectedTurretDate.costUp);
                 //升级操作
                 cube.upgradeTurret(selectedTurretDate.turretUpPrefab);
+                HideUpgradeUI();
             }
           
             

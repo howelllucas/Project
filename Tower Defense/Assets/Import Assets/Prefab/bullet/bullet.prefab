@@ -90,8 +90,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb4db0a749b6b4c1e8ee0b16c235a276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  demage: 50
-  speed: 40
+  demage: 15
+  speed: 50
   deadEffect: {fileID: 682132885840537633, guid: a17870b9cc959401c827027fdd6c85b3,
     type: 3}
   distanceArriveTarget: 1.2

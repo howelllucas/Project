@@ -11,11 +11,11 @@ namespace ns
     ///</summary>
     public class enemy : MonoBehaviour
     {
-        public int Speed = 10;
+        public float Speed = 10;
         public float HP = 150;
         private float tatulHP;
         Transform[] wayTrans;
-        int index = 0;
+        private int index = 0;
         Rigidbody rid;
         public GameObject deadEffect;
         public Slider slider;

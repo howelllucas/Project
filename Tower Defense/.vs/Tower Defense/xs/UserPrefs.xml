@@ -1,8 +1,13 @@
 ﻿<Properties StartupConfiguration="{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Import Assets/Scripts/BuildManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Import Assets/Scripts/wayPoint.cs">
     <Files>
-      <File FileName="Assets/Import Assets/Scripts/BuildManager.cs" Line="133" Column="50" />
-      <File FileName="Assets/Import Assets/Scripts/mapCube.cs" Line="25" Column="27" />
+      <File FileName="Assets/Import Assets/Scripts/BuildManager.cs" Line="162" Column="33" />
+      <File FileName="Assets/Import Assets/Scripts/mapCube.cs" />
+      <File FileName="Assets/Import Assets/Scripts/turret.cs" Line="74" Column="35" />
+      <File FileName="Assets/Import Assets/Scripts/enemySpawner.cs" Line="14" Column="20" />
+      <File FileName="Assets/Import Assets/Scripts/Wave.cs" Line="1" Column="1" />
+      <File FileName="Assets/Import Assets/Scripts/enemy.cs" Line="17" Column="29" />
+      <File FileName="Assets/Import Assets/Scripts/wayPoint.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,7 +16,7 @@
             <Node name="Assets" expanded="True">
               <Node name="Import Assets" expanded="True">
                 <Node name="Scripts" expanded="True">
-                  <Node name="BuildManager.cs" selected="True" />
+                  <Node name="wayPoint.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -22,7 +27,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="12c8588c-1cf6-474f-96b6-bc8867e084c2" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="31d26018-d2dc-4903-a15b-3652d3b1e227" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

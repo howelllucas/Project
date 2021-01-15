@@ -54,6 +54,7 @@ namespace ns
         {
             
             GameObject.Destroy(this.gameObject);
+            gameManager.instance.failedUI();
         }
         void OnDestroy()
         {

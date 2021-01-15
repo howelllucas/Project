@@ -39,6 +39,11 @@ namespace ns
                 }
                 yield return new WaitForSeconds(waveDate);
             }
+            while (aliveEnemyCount>0)
+            {
+                yield return 0;
+            }
+            gameManager.instance.victoryUI();
         }
 
 

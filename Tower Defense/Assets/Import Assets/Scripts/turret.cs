@@ -45,7 +45,15 @@ namespace ns
         private void Update()
         {
             timer += Time.deltaTime;
-            
+            if (enemyList.Count > 0 && enemyList[0] != null)
+            {
+                Vector3 Yposition = enemyList[0].transform.position;
+                Yposition.y = turretTai.transform.position.y;
+                //Quaternion dir = Quaternion.LookRotation(Yposition);
+                //turretTai.transform.rotation = Quaternion.Slerp(turretTai.transform.rotation, dir, 29 * Time.deltaTime);
+                turretTai.transform.LookAt(enemyList[0].transform);
+
+            }
             if (enemyList.Count>0&&timer >= attackRateTime)
             {
                 timer = 0;
@@ -57,15 +65,15 @@ namespace ns
 
         private void attack()
         {
-            if (enemyList.Count > 0 && enemyList[0] != null)
-            {
-                Vector3 Yposition = enemyList[0].transform.position;
-                Yposition.y = turretTai.transform.position.y;
-                //Quaternion dir = Quaternion.LookRotation(Yposition);
-                //turretTai.transform.rotation = Quaternion.Slerp(turretTai.transform.rotation, dir, 29 * Time.deltaTime);
-                turretTai.transform.LookAt(enemyList[0].transform);
+            //if (enemyList.Count > 0 && enemyList[0] != null)
+            //{
+            //    Vector3 Yposition = enemyList[0].transform.position;
+            //    Yposition.y = turretTai.transform.position.y;
+            //    //Quaternion dir = Quaternion.LookRotation(Yposition);
+            //    //turretTai.transform.rotation = Quaternion.Slerp(turretTai.transform.rotation, dir, 29 * Time.deltaTime);
+            //    turretTai.transform.LookAt(enemyList[0].transform);
 
-            }
+            //}
             if (enemyList[0]==null)
             {
                 //调用重新整理集合的方法

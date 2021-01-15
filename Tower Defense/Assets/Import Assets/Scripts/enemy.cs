@@ -12,6 +12,7 @@ namespace ns
     public class enemy : MonoBehaviour
     {
         public float Speed = 10;
+        public float interSpeed = 10;
         public float HP = 150;
         private float tatulHP;
         Transform[] wayTrans;

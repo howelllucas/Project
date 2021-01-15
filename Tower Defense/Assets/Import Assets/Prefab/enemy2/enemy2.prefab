@@ -332,6 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
+  interSpeed: 5
   HP: 200
   deadEffect: {fileID: 4562447173054732651, guid: 3ecf8695e0ef2454487e4ab90bcbe39e,
     type: 3}

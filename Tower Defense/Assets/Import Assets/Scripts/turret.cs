@@ -21,7 +21,13 @@ namespace ns
         public GameObject bullet;
         //获取炮台
         public Transform turretTai;
-        
+        //是否为激光炮台
+        public bool isLaser;
+        //获取激光
+        public LineRenderer lineLaser;
+        public float Laserdemage = 50;
+        public GameObject liserLight;
+
         private void OnTriggerEnter(Collider other)
         {
             if (other.tag=="enemy")
@@ -49,17 +55,49 @@ namespace ns
             {
                 Vector3 Yposition = enemyList[0].transform.position;
                 Yposition.y = turretTai.transform.position.y;
-                //Quaternion dir = Quaternion.LookRotation(Yposition);
-                //turretTai.transform.rotation = Quaternion.Slerp(turretTai.transform.rotation, dir, 29 * Time.deltaTime);
+                
                 turretTai.transform.LookAt(enemyList[0].transform);
 
             }
-            if (enemyList.Count>0&&timer >= attackRateTime)
+            if (isLaser == false)
             {
-                timer = 0;
-                
-                attack();
+                if (enemyList.Count > 0 && timer >= attackRateTime)
+                {
+                    timer = 0;
+
+                    attack();
+                }
             }
+            else if(enemyList.Count > 0)
+            {
+                //生成激光
+                if (lineLaser.enabled == false)
+                {
+                    lineLaser.enabled = true;
+                }
+                liserLight.SetActive(true);
+                if (enemyList[0] == null)
+                {
+                        //调用重新整理集合的方法
+                        updateEnemyList();
+                }
+                if (enemyList.Count > 0)
+                {
+                    lineLaser.SetPositions(new Vector3[] { bulletPoint.transform.position, enemyList[0].transform.position });
+                    enemyList[0].GetComponent<enemy>().takeDemage(Laserdemage * Time.deltaTime);
+                    enemyList[0].GetComponent<enemy>().Speed /= 2;
+                    liserLight.transform.position = enemyList[0].transform.position;
+                    
+                }
+
+            }
+            else
+            {
+                enemyList[0].GetComponent<enemy>().Speed = enemyList[0].GetComponent<enemy>().interSpeed;
+                liserLight.SetActive(false);
+                lineLaser.enabled = false;
+            }
+            
             
         }
 

@@ -1,21 +1,18 @@
 ﻿<Properties StartupConfiguration="{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Import Assets/Scripts/turret.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Import Assets/Scripts/enemy.cs">
     <Files>
-      <File FileName="Assets/Import Assets/Scripts/BuildManager.cs" Line="162" Column="33" />
-      <File FileName="Assets/Import Assets/Scripts/mapCube.cs" />
-      <File FileName="Assets/Import Assets/Scripts/turret.cs" Line="60" Column="15" />
-      <File FileName="Assets/Import Assets/Scripts/enemySpawner.cs" />
-      <File FileName="Assets/Import Assets/Scripts/Wave.cs" />
-      <File FileName="Assets/Import Assets/Scripts/enemy.cs" />
-      <File FileName="Assets/Import Assets/Scripts/wayPoint.cs" />
+      <File FileName="Assets/Import Assets/Scripts/turret.cs" Line="96" Column="106" />
+      <File FileName="Assets/Import Assets/Scripts/enemy.cs" Line="15" Column="38" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Tower Defense" expanded="True">
-            <Node name="Assets" expanded="True" selected="True">
+            <Node name="Assets" expanded="True">
               <Node name="Import Assets" expanded="True">
-                <Node name="Scripts" expanded="True" />
+                <Node name="Scripts" expanded="True">
+                  <Node name="enemy.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -25,7 +22,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c3918ebb-2d93-4b69-88e5-9019ed99051f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5c79b9db-6f11-4719-9450-77a21a3540b6" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -20,21 +20,25 @@ namespace ns
         public void victoryUI()
         {
             endUI.SetActive(true);
-            endUI.GetComponent<Text>().text = "WIN";
+            endUI.GetComponentInChildren<Text>().text = "WIN";
+            Time.timeScale = 0;
         }
         public void failedUI()
         {
             endUI.SetActive(true);
-            endUI.GetComponent<Text>().text = "LOSE";
+            endUI.GetComponentInChildren<Text>().text = "LOSE";
+            Time.timeScale = 0;
         }
 
         public void onretryButton()
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Time.timeScale = 1;
         }
         public void onbackButton()
         {
             SceneManager.LoadScene(0);
+            Time.timeScale = 1;
         }
     
     }

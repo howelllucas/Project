@@ -114,6 +114,10 @@ MonoBehaviour:
   bulletPoint: {fileID: 4773834452000576654}
   bullet: {fileID: 982841561403803892, guid: 64e614f019ac349d7b347f6e5d0a2fbc, type: 3}
   turretTai: {fileID: 5461065577288740401}
+  isLaser: 0
+  lineLaser: {fileID: 0}
+  Laserdemage: 18
+  liserLight: {fileID: 0}
 --- !u!135 &6968612446949500724
 SphereCollider:
   m_ObjectHideFlags: 0

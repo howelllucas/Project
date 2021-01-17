@@ -13,26 +13,36 @@ namespace ns
     {
         [HideInInspector]
         public GameObject mapCubeGo;
+        //存当前建造的炮台
+        public turretDate turretDate1;
         public GameObject buildEffect;
         public int turretLevel=0;
-
-        public void creatTurret(GameObject gam)
+       
+        public void creatTurret(turretDate gam)
         {
-            mapCubeGo = GameObject.Instantiate(gam, this.transform.position, Quaternion.identity);
+            turretDate1 = gam;
+            mapCubeGo = GameObject.Instantiate(gam.turretPrefab, this.transform.position, Quaternion.identity);
             
             GameObject effect = GameObject.Instantiate(buildEffect, this.transform.position, Quaternion.identity);
             Destroy(effect, 1f);
             turretLevel++;
+            
         }
         public void destoryTurret()
         {
             Destroy(mapCubeGo);
         }
         //升级方法
-        public void upgradeTurret(GameObject gam)
+        public void upgradeTurret()
         {
             destoryTurret();
-            creatTurret(gam);
+            
+            mapCubeGo = GameObject.Instantiate(turretDate1.turretUpPrefab, this.transform.position, Quaternion.identity);
+
+            GameObject effect = GameObject.Instantiate(buildEffect, this.transform.position, Quaternion.identity);
+            Destroy(effect, 1f);
+            turretLevel++;
+
         }
     
     }

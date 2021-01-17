@@ -135,7 +135,7 @@ MonoBehaviour:
   turretTai: {fileID: 6721725734267962155}
   isLaser: 1
   lineLaser: {fileID: 5223992130926827033}
-  Laserdemage: 50
+  Laserdemage: 12
   liserLight: {fileID: 7290615157288774365}
 --- !u!135 &6750715273942111284
 SphereCollider:
@@ -445,10 +445,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LaserEffect
       objectReference: {fileID: 0}
-    - target: {fileID: 4562560448072037519, guid: 677d8c50a491e4072ad42eba99d1adff,
+    - target: {fileID: 1354850106399026956, guid: 677d8c50a491e4072ad42eba99d1adff,
         type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.95
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6099506973087156734, guid: 677d8c50a491e4072ad42eba99d1adff,
         type: 3}

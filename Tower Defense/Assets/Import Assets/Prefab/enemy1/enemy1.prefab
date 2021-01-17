@@ -628,6 +628,8 @@ MonoBehaviour:
   Speed: 5
   interSpeed: 5
   HP: 150
+  enemyCast: 5
+  textCast: {fileID: 0}
   deadEffect: {fileID: 3605288669575509490, guid: b7b67050b56df489ea5a221673adba78,
     type: 3}
   slider: {fileID: 3020264985026548582}

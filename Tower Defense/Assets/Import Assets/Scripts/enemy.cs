@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
@@ -17,6 +18,11 @@ namespace ns
         private float tatulHP;
         Transform[] wayTrans;
         private int index = 0;
+        //怪物价钱
+        public int enemyCast=0;
+        //总金币
+        private GameObject gamemanage;
+
         Rigidbody rid;
         public GameObject deadEffect;
         public Slider slider;
@@ -25,6 +31,9 @@ namespace ns
             wayTrans = wayPoint.tans;
             rid = this.transform.GetComponent<Rigidbody>();
             tatulHP = HP;
+
+            gamemanage = GameObject.Find("enemyMassage");
+
         }
         private void Update()
         {
@@ -77,9 +86,20 @@ namespace ns
         }
         private void dead()
         {
+            gamemanage.GetComponent<BuildManager>().changeMoney(enemyCast);
             GameObject eff= GameObject.Instantiate(deadEffect, transform.position, Quaternion.identity);
             Destroy(eff, 1.5f);
             Destroy(this.gameObject);
+        }
+
+        //减速
+        public void slowDown()
+        {
+            if (Speed != interSpeed) return;
+            
+            
+             this.Speed -=2;
+            
         }
     }
 

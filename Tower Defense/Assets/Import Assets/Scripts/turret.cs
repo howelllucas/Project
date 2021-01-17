@@ -34,14 +34,20 @@ namespace ns
             {
                 enemyList.Add(other.gameObject);
             }
+         
         }
 
         private void OnTriggerExit(Collider other)
         {
+            if (isLaser == true)
+            {
+                enemyList[0].GetComponent<enemy>().Speed = enemyList[0].GetComponent<enemy>().interSpeed;
+            }
             if (other.tag == "enemy")
             {
                 enemyList.Remove(other.gameObject);
             }
+            
         }
         private void Start()
         {
@@ -79,21 +85,28 @@ namespace ns
                 if (enemyList[0] == null)
                 {
                         //调用重新整理集合的方法
-                        updateEnemyList();
+                    updateEnemyList();
+                    
                 }
                 if (enemyList.Count > 0)
                 {
                     lineLaser.SetPositions(new Vector3[] { bulletPoint.transform.position, enemyList[0].transform.position });
                     enemyList[0].GetComponent<enemy>().takeDemage(Laserdemage * Time.deltaTime);
-                    enemyList[0].GetComponent<enemy>().Speed /= 2;
+                    enemyList[0].GetComponent<enemy>().slowDown();
+
                     liserLight.transform.position = enemyList[0].transform.position;
                     
+                   
+
+                    
+
                 }
 
             }
             else
             {
-                enemyList[0].GetComponent<enemy>().Speed = enemyList[0].GetComponent<enemy>().interSpeed;
+                
+                
                 liserLight.SetActive(false);
                 lineLaser.enabled = false;
             }

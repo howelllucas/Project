@@ -13,19 +13,39 @@ MonoBehaviour:
   m_Name: Item
   m_EditorClassIdentifier: 
   dataArray:
-  - itemId: "\u963F\u8428\u5FB7"
-    itemHP: 
-    itemSpeed: 
-    itemCast: 
-  - itemId: sad
-    itemHP: 
-    itemSpeed: 
-    itemCast: 
-  - itemId: "\u58EB\u5927\u592B\u6536\u5230"
-    itemHP: 
-    itemSpeed: 
-    itemCast: 
-  - itemId: "\u7ED9\u5BF9\u65B9"
-    itemHP: 
-    itemSpeed: 
-    itemCast: 
+  - enemy: Element1
+    enemyID: 1
+    enemyCount: 1
+    timeDate: 1
+  - enemy: Element2
+    enemyID: 2
+    enemyCount: 3
+    timeDate: 1
+  - enemy: Element3
+    enemyID: 3
+    enemyCount: 6
+    timeDate: 1
+  - enemy: Element4
+    enemyID: 4
+    enemyCount: 4
+    timeDate: 1
+  - enemy: Element5
+    enemyID: 1
+    enemyCount: 8
+    timeDate: 1
+  - enemy: Element6
+    enemyID: 5
+    enemyCount: 12
+    timeDate: 1
+  - enemy: Element7
+    enemyID: 3
+    enemyCount: 16
+    timeDate: 1
+  - enemy: Element8
+    enemyID: 2
+    enemyCount: 7
+    timeDate: 2
+  - enemy: Element9
+    enemyID: 6
+    enemyCount: 1
+    timeDate: 1

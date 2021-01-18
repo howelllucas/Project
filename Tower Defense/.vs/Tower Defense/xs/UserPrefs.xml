@@ -1,10 +1,14 @@
 ﻿<Properties StartupConfiguration="{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Import Assets/Scripts/enemySpawner.cs">
     <Files>
-      <File FileName="Assets/Import Assets/Scripts/ItemManager.cs" Line="1" Column="1" />
-      <File FileName="Assets/Import Assets/Scripts/Item.cs" Line="17" Column="31" />
-      <File FileName="Assets/Editor/ExcelReader.cs" Line="79" Column="10" />
-      <File FileName="Assets/Import Assets/Scripts/enemySpawner.cs" Line="14" Column="25" />
+      <File FileName="Assets/Import Assets/Scripts/ItemManager.cs" Line="15" Column="32" />
+      <File FileName="Assets/Import Assets/Scripts/Item.cs" />
+      <File FileName="Assets/Editor/ExcelReader.cs" />
+      <File FileName="Assets/Import Assets/Scripts/wayPoint.cs" />
+      <File FileName="Assets/Import Assets/Scripts/enemySpawner.cs" Line="62" Column="109" />
+      <File FileName="Assets/Import Assets/Scripts/Wave.cs" />
+      <File FileName="Assets/Import Assets/Scripts/enemy.cs" />
+      <File FileName="Assets/Import Assets/Scripts/enemys.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +18,7 @@
               <Node name="Editor" expanded="True" />
               <Node name="Import Assets" expanded="True">
                 <Node name="Scripts" expanded="True">
-                  <Node name="enemySpawner.cs" selected="True" />
+                  <Node name="ItemManager.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -25,7 +29,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="82ab5645-a217-452e-a11a-66624d699ebf" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="32dccb88-d6bc-483c-bfa3-3955ba8230fb" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

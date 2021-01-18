@@ -6655,6 +6655,7 @@ GameObject:
   - component: {fileID: 671352010}
   - component: {fileID: 671352012}
   - component: {fileID: 671352013}
+  - component: {fileID: 671352014}
   m_Layer: 0
   m_Name: enemyMassage
   m_TagString: Untagged
@@ -6693,6 +6694,7 @@ MonoBehaviour:
   - enemy: {fileID: 8644712578730176132, guid: b12f4663c6aaa468c853367bd0694786, type: 3}
     enemyCount: 1
     timeDate: 1
+  itenManader: {fileID: 11400000, guid: 87e075a0204074419a35eb3e5c7a17f4, type: 2}
   startPoint: {fileID: 159333915}
   waveDate: 1
 --- !u!4 &671352011
@@ -6770,6 +6772,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   endUI: {fileID: 95904565}
+--- !u!114 &671352014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 671352009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74a59ad7f6c224b8290eed7df4f9825c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemysArray:
+  - {fileID: 2888100098386817694, guid: d57866cb8e2d94020a66858037e630ce, type: 3}
+  - {fileID: 5610821273962920484, guid: 076cafaf5ff624629ae655ae2cd21089, type: 3}
+  - {fileID: 2864234157345648926, guid: 8d092bcb104904ccfa6417cbf7bc7d00, type: 3}
+  - {fileID: 5215504678762076447, guid: 8db2792713c964c1a8a1225aa5153177, type: 3}
+  - {fileID: 3846632597417681645, guid: 13cc665d6453643f2ac906cb8b118332, type: 3}
+  - {fileID: 8644712578730668772, guid: b12f4663c6aaa468c853367bd0694786, type: 3}
 --- !u!1001 &676886987
 PrefabInstance:
   m_ObjectHideFlags: 0

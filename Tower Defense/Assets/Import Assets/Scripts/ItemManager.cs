@@ -11,6 +11,7 @@ namespace ns
     [System.Serializable]
     public class ItemManager : ScriptableObject
     {
+        
         public Item[] dataArray;
     }
 

@@ -46,10 +46,10 @@ using ns;
                 {
                     Item item = new Item();
                     //解析每列的数据
-                    item.itemId = collect[i][0].ToString();
-                    item.itemHP = collect[i][1].ToString();
-                    item.itemSpeed = collect[i][2].ToString();
-                    item.itemCast = collect[i][3].ToString();
+                    item.enemy = collect[i][0].ToString();
+                    item.enemyID = collect[i][1].ToString();
+                    item.enemyCount = collect[i][2].ToString();
+                    item.timeDate = collect[i][3].ToString();
                     array[i - 1] = item;
                 }
                 return array;

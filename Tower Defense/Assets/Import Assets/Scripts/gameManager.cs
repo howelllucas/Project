@@ -17,7 +17,7 @@ namespace ns
         {
             instance = this;
         }
-        public void victoryUI()
+        public void WinUI()
         {
             endUI.SetActive(true);
             endUI.GetComponentInChildren<Text>().text = "WIN";
@@ -27,6 +27,12 @@ namespace ns
         {
             endUI.SetActive(true);
             endUI.GetComponentInChildren<Text>().text = "LOSE";
+            Time.timeScale = 0;
+        }
+        public void victoryUI()
+        {
+            endUI.SetActive(true);
+            endUI.GetComponentInChildren<Text>().text = "通过关卡";
             Time.timeScale = 0;
         }
 
@@ -40,7 +46,14 @@ namespace ns
             SceneManager.LoadScene(0);
             Time.timeScale = 1;
         }
-    
+        public void nextButton()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            this.GetComponent<enemySpawner>().index++;
+            Time.timeScale = 1;
+        }
+
+
     }
 
 }

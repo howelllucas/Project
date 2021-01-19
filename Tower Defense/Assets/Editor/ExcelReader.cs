@@ -12,7 +12,6 @@ using ns;
     {
 
 
-
         public class ExcelConfig
         {
             /// <summary>
@@ -92,7 +91,7 @@ using ns;
                 }
 
                 //asset文件的路径 要以"Assets/..."开始，否则CreateAsset会报错
-                string assetPath = string.Format("{0}{1}.asset", ExcelConfig.assetPath, "Item");
+                string assetPath = string.Format("{0}{1}.asset", ExcelConfig.assetPath, "enemyWave01");
                 //生成一个Asset文件
                 AssetDatabase.CreateAsset(manager, assetPath);
                 AssetDatabase.SaveAssets();

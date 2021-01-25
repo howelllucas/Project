@@ -22,6 +22,7 @@ namespace ns
         public int enemyCast=0;
         //总金币
         private GameObject gamemanage;
+        
 
         Rigidbody rid;
         public GameObject deadEffect;
@@ -95,10 +96,11 @@ namespace ns
         //减速
         public void slowDown()
         {
+            
             if (Speed != interSpeed) return;
             
             
-             this.Speed -=2;
+            this.Speed/=2;
             
         }
     }

@@ -135,8 +135,9 @@ MonoBehaviour:
   turretTai: {fileID: 6721725734267962155}
   isLaser: 1
   lineLaser: {fileID: 5223992130926827033}
-  Laserdemage: 12
+  Laserdemage: 4
   liserLight: {fileID: 7290615157288774365}
+  turretCost: 80
 --- !u!135 &6750715273942111284
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -148,7 +149,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 6
+  m_Radius: 10
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &6104551291885282737
 Rigidbody:

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace ns
 {
@@ -17,17 +18,22 @@ namespace ns
         public Transform startPoint ;
         public float waveDate;
         private GameObject[] enemysArrays;
-        public int index=0;
+        public int index=1;
+
+        public GameObject waveUI;
+        public int waveNumber;
 
         public GameObject bossUI;
 
         private void Awake()
         {
             enemysArrays = this.transform.GetComponent<enemys>().enemysArray;
+            waveNumber = Convert.ToInt32(waveUI.GetComponent<Text>().text);
         }
         private void Start()
         {
             StartCoroutine(creatEnemy());
+
            
         }
         IEnumerator creatEnemy()
@@ -66,7 +72,10 @@ namespace ns
                         {
                             yield return new WaitForSeconds(Convert.ToInt32(itenManader[index].dataArray[i].timeDate));
                         }
+                        
                     }
+                    //ui显示波数
+                    waveUI.GetComponent<Text>().text = waveNumber++.ToString();
                     while (aliveEnemyCount > 0)
                     {
 
@@ -78,7 +87,7 @@ namespace ns
                         bossUI.SetActive(true);
                         yield return new WaitForSeconds(2.0f);
                         bossUI.SetActive(false);
-                        Debug.Log("11111111");
+                        
                     }
                     yield return new WaitForSeconds(waveDate);
                 }//关卡for-end
@@ -86,8 +95,10 @@ namespace ns
                 {
                     yield return 0;
                 }
+                
                 //显示通关，开始下一关UI
                 gameManager.instance.victoryUI();
+
             }//游戏关卡forend
             else
             {

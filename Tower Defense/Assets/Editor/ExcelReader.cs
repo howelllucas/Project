@@ -68,9 +68,11 @@ using ns;
 
                 DataSet result = excelReader.AsDataSet();
                 //Tables[0] 下标0表示excel文件中第一张表的数据
+
                 columnNum = result.Tables[0].Columns.Count;
                 rowNum = result.Tables[0].Rows.Count;
                 return result.Tables[0].Rows;
+                
             }
         }
 

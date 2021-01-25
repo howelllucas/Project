@@ -1,13 +1,10 @@
 ﻿<Properties StartupConfiguration="{689D9C60-2577-4B28-C05E-EFF5B7059F6B}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Import Assets/Scripts/enemySpawner.cs">
     <Files>
-      <File FileName="Assets/Import Assets/Scripts/ItemManager.cs" Line="15" Column="32" />
-      <File FileName="Assets/Import Assets/Scripts/Item.cs" Line="17" Column="9" />
-      <File FileName="Assets/Editor/ExcelReader.cs" Line="94" Column="101" />
-      <File FileName="Assets/Import Assets/Scripts/wayPoint.cs" />
-      <File FileName="Assets/Import Assets/Scripts/enemySpawner.cs" Line="64" Column="1" />
-      <File FileName="Assets/Import Assets/Scripts/gameManager.cs" Line="52" Column="55" />
-      <File FileName="Assets/Import Assets/Scripts/enemys.cs" Line="1" Column="1" />
+      <File FileName="Assets/Import Assets/Scripts/turret.cs" Line="29" Column="37" />
+      <File FileName="Assets/Import Assets/Scripts/BuildManager.cs" Line="48" Column="37" />
+      <File FileName="Assets/Import Assets/Scripts/gameManager.cs" Line="40" Column="22" />
+      <File FileName="Assets/Import Assets/Scripts/enemySpawner.cs" Line="31" Column="76" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -28,7 +25,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c59aca50-ca78-414f-8427-6ed5164383aa" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1afc5f1d-cf96-4730-891b-881d7e75b48c" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

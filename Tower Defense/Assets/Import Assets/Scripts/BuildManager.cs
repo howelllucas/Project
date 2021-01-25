@@ -17,12 +17,12 @@ namespace ns
         //当前选择的是哪个（需要创建的）
         private turretDate selectedTurretDate;
         //存储实例化的炮台用于确认点击隐藏升级ui
-        public turretDate newTurret;
+        //public turretDate newTurret;
 
         public GameObject toggle;
         private Toggle[] toggles;
 
-        private int money = 1000;
+        public int money = 140;
 
         public Text text;
 
@@ -45,6 +45,7 @@ namespace ns
         private void Start()
         {
             toggles = toggle.GetComponentsInChildren<Toggle>();
+            text.text = "¥" + money;
         }
 
         void Update()
@@ -71,10 +72,11 @@ namespace ns
                         {
                             
                             //判断钱够不够
-                            if (money>= selectedTurretDate.cost)
+                            if (money>= selectedTurretDate.turretPrefab[0].GetComponent<turret>().turretCost)
                             {
+                                
                                 //可以创建,先减钱再创建
-                                changeMoney(-selectedTurretDate.cost);
+                                changeMoney(-selectedTurretDate.turretPrefab[0].GetComponent<turret>().turretCost);
                                 mc.creatTurret(selectedTurretDate);
                                 foreach (var item in toggles)
                                 {
@@ -97,7 +99,9 @@ namespace ns
                             //升级ui显示
                             if (isShowUIgrade == false)
                             {
-                                if (cube.turretLevel > 1)
+                                //判断是否已经满级
+                                
+                                if (cube.turretLevel >4)
                                 {
                                     showUpgradeUI(cube.transform.position, false);
                                 }
@@ -150,9 +154,11 @@ namespace ns
             isShowUIgrade = true;
             upgradeUi.transform.position = UIPoint;
             upgradeUi.SetActive(true);
-            if (money> cube.turretDate1.costUp&& interactableBool==true)
+            upgradeButton.GetComponentInChildren<Text>().text = cube.turretDate1.turretPrefab[cube.turretLevel].GetComponent<turret>().turretCost.ToString();
+            if (money>= cube.turretDate1.turretPrefab[cube.turretLevel].GetComponent<turret>().turretCost && interactableBool==true&& cube.isfullLevel==false)
             {
                 upgradeButton.interactable =true;
+                
             }
             else
             {
@@ -163,7 +169,7 @@ namespace ns
         private void HideUpgradeUI()
         {
             isShowUIgrade = false;
-            cube.turretLevel = 0;
+            //cube.turretLevel = 0;
             upgradeUi.SetActive(false);
             
         }
@@ -171,14 +177,14 @@ namespace ns
         //按钮点击事件
         public void onUpgradeButton()
         {
-            if (money < cube.turretDate1.costUp)
+            if (money < cube.turretDate1.turretPrefab[cube.turretLevel].GetComponent<turret>().turretCost)
             {
                 ani.SetTrigger("flicker");
                 upgradeButton.interactable = false;
             }
             else
             {
-                changeMoney(-cube.turretDate1.costUp);
+                changeMoney(-cube.turretDate1.turretPrefab[cube.turretLevel].GetComponent<turret>().turretCost);
                 //升级操作
                 cube.upgradeTurret();
                 HideUpgradeUI();
@@ -189,7 +195,7 @@ namespace ns
         public void onDestoryButton()
         {
             HideUpgradeUI();
-            cube.destoryTurret();
+            cube.alldestoryTurret();
         }
     }
     

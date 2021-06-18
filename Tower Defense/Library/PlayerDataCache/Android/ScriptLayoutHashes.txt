@@ -1,9 +1,10 @@
 Android
 PlayerPath?
-/Users/luhongwei/Desktop/tower.apk
+/Users/lucas/Desktop/mojing2.apk
 SceneListBegin?
 Assets/Scenes/start.unity
-Assets/Scenes/SampleScene.unity
+Assets/Scenes/SampleScene1.unity
+Assets/Scenes/SampleScene2.unity
 SceneListEnd?
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:ns.wayPoint
 3c08375166df118bd1801438fc36b92f Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
@@ -22,7 +23,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.P
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
 032425131b3d68b5d25a6ddf7121deba Assembly-CSharp.dll:UnityStandardAssets.CinematicEffects.AntiAliasing
 e7a73f5f78ba6445195ec23b74a1ce2d Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
-245316694cdc455ac873aff899a728ba Assembly-CSharp.dll:ns.enemy
+e4bca3fe2f61024ad2e0586a4acc54f5 Assembly-CSharp.dll:ns.enemy
 d9d02fe028b61c5d98e50a25f7f44fcf Assembly-CSharp.dll:UnityStandardAssets.CinematicEffects.ScreenSpaceReflection
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -57,7 +58,9 @@ aa165095bcf0f4d99594ea33df01c81b UnityEngine.UI.dll:UnityEngine.UI.Slider
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 d3c76b14a25eebd3a3323dd43297919c Unity.TextMeshPro.dll:TMPro.TMP_InputField
-f74d2a75c05db75db76e466ac9a6de42 Assembly-CSharp.dll:ns.enemySpawner
+103ebfee1341b03f96afea6ff6036b33 Assembly-CSharp.dll:ns.enemySpawner
+71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
+71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 507174d46dacbc5fe45e28485db5dd1e UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -121,15 +124,17 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
 7fb9de8dcf73854b6b328eca1f7a6e6d Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsTracker
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:ns.enmuManage
 b8a5e8091ab0b8861d2add371082c5e0 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 d41b378a81b0f4d5e1f93ff0334021bc Assembly-CSharp.dll:UnityStandardAssets.CinematicEffects.Bloom
-3011ca96216ad4a0a46c84ba8ad02d2b Assembly-CSharp.dll:ns.mapCube
+11c8899754879460f8616e8e87d1ba65 Assembly-CSharp.dll:ns.mapCube
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 4f1d41810ffa0fd02e115116705341cc Assembly-CSharp.dll:UnityStandardAssets.CinematicEffects.DepthOfField
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 1684cfe969f12be16cbd51ce5b20c9eb Assembly-CSharp.dll:ns.bullet
 b4a17f9cbc4da95ee77dba23b45dea37 Assembly-CSharp.dll:UnityStandardAssets.CinematicEffects.LensAberrations
+046d348fec35b3f70623fa6278e884b5 Assembly-CSharp.dll:.enemys
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -145,9 +150,10 @@ e0ee4b3d4e27318934cc940a969d3d96 UnityEngine.Networking.dll:UnityEngine.Networki
 ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 9b895dcabbc1faf095c000c32d471fd0 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 5887ef1bc706b22b773d253fd443ceef UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
-7e32093a4fe81139b257ee8e92701836 Assembly-CSharp.dll:ns.BuildManager
+b43969743697511b37ac5fcc3576d590 Assembly-CSharp.dll:ns.BuildManager
 35a9693c388776aaf487636491a20f11 Unity.TextMeshPro.dll:TMPro.TMP_FontAsset
 e1300922cc039f41ab46a47f4cb05898 Unity.TextMeshPro.dll:TMPro.TMP_Settings
+4d9a4fe4b848a6bec41d8e45addd5d99 Assembly-CSharp.dll:ns.gameManager
 88cc9df3c6fc697bfbeacd24c0d6f2d7 UnityEngine.TestRunner.dll:UnityEngine.TestTools.BeforeAfterTestCommandState
 88cc9df3c6fc697bfbeacd24c0d6f2d7 UnityEngine.TestRunner.dll:UnityEngine.TestTools.EnumerableSetUpTearDownCommandState
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
@@ -172,6 +178,5 @@ df434544c9f7b33d1cc7e635b180d279 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 31f70f28cfbf45bb39a0d00c8bca3a25 Assembly-CSharp.dll:ns.CameraMove
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
-52ca823cb930fca22097981b7b67b487 Assembly-CSharp.dll:ns.turret
-4d9a4fe4b848a6bec41d8e45addd5d99 Assembly-CSharp.dll:ns.gameManager
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:ns.enmuManage
+25b902001814dbe0573c4cc2e1b607b7 Assembly-CSharp.dll:ns.ItemManager
+0572d4d8493ef79af5383c3d3ff1acb6 Assembly-CSharp.dll:ns.turret

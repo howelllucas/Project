@@ -27,6 +27,10 @@ namespace ns
         public LineRenderer lineLaser;
         public float Laserdemage = 50;
         public GameObject liserLight;
+        //花费
+        public int turretCost;
+        //是否受到减速
+        private bool isSlowDown = false;
 
         private void OnTriggerEnter(Collider other)
         {
@@ -93,7 +97,7 @@ namespace ns
                     lineLaser.SetPositions(new Vector3[] { bulletPoint.transform.position, enemyList[0].transform.position });
                     enemyList[0].GetComponent<enemy>().takeDemage(Laserdemage * Time.deltaTime);
                     enemyList[0].GetComponent<enemy>().slowDown();
-
+                    isSlowDown = true;
                     liserLight.transform.position = enemyList[0].transform.position;
                     
                    
@@ -105,8 +109,8 @@ namespace ns
             }
             else
             {
-                
-                
+
+                isSlowDown = false;
                 liserLight.SetActive(false);
                 lineLaser.enabled = false;
             }

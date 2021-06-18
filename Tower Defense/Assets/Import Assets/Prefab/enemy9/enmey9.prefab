@@ -1018,11 +1018,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9d54c617b2154f6e9a591e5097f088c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
-  interSpeed: 3
-  HP: 800
-  enemyCast: 50
-  textCast: {fileID: 0}
+  Speed: 1.6
+  interSpeed: 1.6
+  HP: 3520
+  enemyCast: 100
   deadEffect: {fileID: 8215867475263746240, guid: 8b0e5b1c493d349c6b0cb40046bd3322,
     type: 3}
   slider: {fileID: 6747904457980692211}

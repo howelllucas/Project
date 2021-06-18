@@ -13,14 +13,18 @@ namespace ns
     {
         public GameObject endUI;
         public static gameManager instance;
+        private Button[] buttons;
         private void Awake()
         {
             instance = this;
+            buttons = endUI.GetComponentsInChildren<Button>();
         }
         public void WinUI()
         {
             endUI.SetActive(true);
             endUI.GetComponentInChildren<Text>().text = "WIN";
+            buttons[0].gameObject.SetActive(true);
+            buttons[2].gameObject.SetActive(false);
             Time.timeScale = 0;
         }
         public void failedUI()
@@ -33,6 +37,8 @@ namespace ns
         {
             endUI.SetActive(true);
             endUI.GetComponentInChildren<Text>().text = "通过关卡";
+            buttons[0].gameObject.SetActive(false);
+            buttons[2].gameObject.SetActive(true);
             Time.timeScale = 0;
         }
 
@@ -48,8 +54,10 @@ namespace ns
         }
         public void nextButton()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            this.GetComponent<enemySpawner>().index++;
+            
+            SceneManager.LoadScene(2);
+            
+            
             Time.timeScale = 1;
         }
 

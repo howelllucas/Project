@@ -1,0 +1,46 @@
+﻿
+using EZ.Data;
+using EZ.DataMgr;
+using Game;
+using UnityEngine;
+
+namespace EZ.Weapon
+{
+    public class AK47Gun : Gun
+    {
+
+        public override void Init(FightWeaponMgr mgr)
+        {
+            base.Init(mgr);
+            ////InitDamage();
+        }
+        
+        protected override void InitDamage()
+        {
+            ItemItem weaponItem = Global.gApp.gGameData.GetItemDataByName(GameConstVal.WAK47);
+            
+            m_DtTime = weaponItem.dtime / Global.gApp.gSystemMgr.GetSkillMgr().GetHitTimeSkillParam();
+
+            WeaponMgr weaponMgr = Global.gApp.gSystemMgr.GetWeaponMgr();
+            int gunLevel = weaponMgr.GetWeaponLevel(GameConstVal.WAK47);
+            //WeaponData weaponData = Global.gApp.gGameData.GetWeaponData().Find(l => l.level == gunLevel);
+            Guns_dataItem weaponLevelData = Global.gApp.gGameData.GunDataConfig.Get(gunLevel);
+
+            double atk = weaponLevelData.weapon_ak47[(int)MWeapon.Atk];
+            if (GetRealQuality(weaponItem) > 0)
+            {
+                atk = weaponLevelData.weapon_ak47_super[(int)MWeapon.Atk];
+            }
+            SetDamage(atk);
+        }
+
+        protected override void Fire()
+        {
+            Global.gApp.gShakeCompt.StartShake(0, 0.1f, 0.03f);
+            base.Fire();
+            InstanceNormalBullet();
+            //Shining.VibrationSystem.Vibrations.instance.Vibrate1ms();
+        }
+    }
+}
+

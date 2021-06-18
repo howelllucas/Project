@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{384DDFEF-D124-E930-8874-E44924DB42C0}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Crasher.cs">
+    <Files>
+      <File FileName="Assets/Scripts/AnimaterMge.cs" Line="26" Column="6" />
+      <File FileName="Assets/Scripts/playParticle.cs" Line="9" Column="32" />
+      <File FileName="Assets/Scripts/smallCard.cs" />
+      <File FileName="Assets/Scripts/MySort.cs" Line="7" Column="2" />
+      <File FileName="Assets/Scripts/Crasher.cs" Line="18" Column="21" />
+      <File FileName="Assets/Scripts/FadeOut.cs" Line="56" Column="1" />
+      <File FileName="Assets/Scripts/ClickImage.cs" Line="11" Column="52" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="wallpaper" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Resource" expanded="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="Crasher.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f409589e-b57d-453d-86cc-b8b5f6a42cfb" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

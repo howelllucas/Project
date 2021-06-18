@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{FE256B49-5156-9002-6EC9-37521D1E73B7}|">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TA_Shader" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="ShaderForge" expanded="True">
+                <Node name="Editor" expanded="True">
+                  <Node name="InternalResources" expanded="True">
+                    <Node name="Inspectors" expanded="True">
+                      <Node name="ShaderForgeInspector.cs" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="55bcbaea-963f-4b35-b704-6c16117599a0" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

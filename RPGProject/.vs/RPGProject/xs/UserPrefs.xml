@@ -1,10 +1,9 @@
 ﻿<Properties StartupConfiguration="{21BD93AE-C013-11DB-C887-5DF3656E048C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/UI/FunctionBar.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/UI/inventoryItemGrid.cs">
     <Files>
-      <File FileName="Assets/Script/custom/SkillInfo.cs" Line="23" Column="1" />
-      <File FileName="Assets/Script/player/playerDir.cs" Line="50" Column="14" />
-      <File FileName="Assets/Script/UI/SkillUI.cs" Line="19" Column="30" />
-      <File FileName="Assets/Script/UI/FunctionBar.cs" Line="43" Column="16" />
+      <File FileName="Assets/Script/UI/shortCut.cs" Line="13" Column="22" />
+      <File FileName="Assets/Script/UI/skillItemIcon.cs" Line="54" Column="6" />
+      <File FileName="Assets/Script/UI/inventoryItemGrid.cs" Line="8" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,7 +17,7 @@
                 <Node name="player" expanded="True" />
                 <Node name="start" expanded="True" />
                 <Node name="UI" expanded="True">
-                  <Node name="FunctionBar.cs" selected="True" />
+                  <Node name="inventoryItemGrid.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -29,7 +28,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="704d3267-277c-47e6-8086-21a2e475ff40" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="16722637-2ced-4e6f-957a-ba94388034b9" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/luhongwei/Documents/GitFloder/RPGProject/Assets/Script/UI/equipment.cs" relfile="Assets/Script/UI/equipment.cs" line="58" column="1" />

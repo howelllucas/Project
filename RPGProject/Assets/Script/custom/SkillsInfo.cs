@@ -12,12 +12,13 @@ public class SkillsInfo : MonoBehaviour
     public static SkillsInfo instance;
     public Dictionary<int, SkillInfo> skillInfoDict = new Dictionary<int, SkillInfo>();
 
-    public SkillInfo skillInfo;
+    //public SkillInfo skillInfo;
     private void Awake()
     {
         instance = this;
         InitDkillInfoDict();
     }
+    
     private void InitDkillInfoDict()
     {
         string text = skillInfoText.text;

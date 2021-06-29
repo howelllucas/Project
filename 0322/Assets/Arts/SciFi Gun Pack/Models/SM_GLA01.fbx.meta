@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: 0546b43e10f39ae409274406e5bdae0e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: SM_GLA01_Drum
+    100004: SM_GLA01_Trigger
+    100006: SM_Grenade1
+    100008: SM_Grenade2
+    100010: SM_Grenade3
+    100012: SM_Grenade4
+    100014: SM_Grenade5
+    100016: SM_Grenade6
+    400000: //RootNode
+    400002: SM_GLA01_Drum
+    400004: SM_GLA01_Trigger
+    400006: SM_Grenade1
+    400008: SM_Grenade2
+    400010: SM_Grenade3
+    400012: SM_Grenade4
+    400014: SM_Grenade5
+    400016: SM_Grenade6
+    2300000: //RootNode
+    2300002: SM_GLA01_Drum
+    2300004: SM_GLA01_Trigger
+    2300006: SM_Grenade1
+    2300008: SM_Grenade2
+    2300010: SM_Grenade3
+    2300012: SM_Grenade4
+    2300014: SM_Grenade5
+    2300016: SM_Grenade6
+    3300000: //RootNode
+    3300002: SM_GLA01_Drum
+    3300004: SM_GLA01_Trigger
+    3300006: SM_Grenade1
+    3300008: SM_Grenade2
+    3300010: SM_Grenade3
+    3300012: SM_Grenade4
+    3300014: SM_Grenade5
+    3300016: SM_Grenade6
+    4300000: SM_GLA01
+    4300002: SM_GLA01_Trigger
+    4300004: SM_GLA01_Drum
+    4300006: SM_Grenade1
+    4300008: SM_Grenade2
+    4300010: SM_Grenade3
+    4300012: SM_Grenade4
+    4300014: SM_Grenade5
+    4300016: SM_Grenade6
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Black
+    second: {fileID: 2100000, guid: 0e0d5566fa754f84c95c337f5b7a2ba1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Blue_Light
+    second: {fileID: 2100000, guid: cbb2d68c3a497124e91b7db68be98abe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Color_1
+    second: {fileID: 2100000, guid: 91e61bbc12841d44fb60909f7ca52bc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Grey
+    second: {fileID: 2100000, guid: 8fca9938b52a5a5489b13aa534c39f49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Grey_Dark
+    second: {fileID: 2100000, guid: b08f3f1752551d5428b9818bee55800f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Screens
+    second: {fileID: 2100000, guid: 6f0df9990f8ddce409d83b659ee91112, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

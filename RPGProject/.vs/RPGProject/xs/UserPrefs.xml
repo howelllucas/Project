@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{21BD93AE-C013-11DB-C887-5DF3656E048C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/UI/inventoryItemGrid.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/UI/skillItem.cs">
     <Files>
-      <File FileName="Assets/Script/UI/shortCut.cs" Line="13" Column="22" />
-      <File FileName="Assets/Script/UI/skillItemIcon.cs" Line="54" Column="6" />
-      <File FileName="Assets/Script/UI/inventoryItemGrid.cs" Line="8" Column="23" />
+      <File FileName="Assets/Script/UI/shortCut.cs" Line="19" Column="33" />
+      <File FileName="Assets/Script/UI/skillItemIcon.cs" Line="71" Column="17" />
+      <File FileName="Assets/Script/UI/skillItem.cs" Line="20" Column="6" />
+      <File FileName="Assets/Script/UI/SkillUI.cs" Line="42" Column="78" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,7 +18,7 @@
                 <Node name="player" expanded="True" />
                 <Node name="start" expanded="True" />
                 <Node name="UI" expanded="True">
-                  <Node name="inventoryItemGrid.cs" selected="True" />
+                  <Node name="skillItem.cs" selected="True" />
                 </Node>
               </Node>
             </Node>

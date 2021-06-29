@@ -18,7 +18,7 @@ public class skillItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     private int id;
 
-    shortCut oldParent;
+    //shortCut oldParent;
     shortCut nowParent;
 
     private bool isMouseStop = false;
@@ -27,10 +27,19 @@ public class skillItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         iconImage = this.transform.GetComponent<Image>();
         canvasRect = GameObject.Find("bg").transform as RectTransform;
+        
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
-        oldParent = this.transform.parent.GetComponent<shortCut>();
+        if (eventData.pointerCurrentRaycast.gameObject.tag== "shortCut")
+        {
+            id = eventData.pointerCurrentRaycast.gameObject.GetComponent<shortCut>().id;
+        }
+        else
+        {
+            id = this.GetComponentInParent<skillItem>().id;
+        }
+        //oldParent = this.transform.parent.GetComponent<shortCut>();
         bool isRect = RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, eventData.position,
             eventData.enterEventCamera, out vecPoint);
         if (isRect)
@@ -56,26 +65,24 @@ public class skillItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
         if (go != null)//不是空
         {
-            if (go.tag == "Inventory_item_grid")//空格子
+            if (go.tag == "shortCut")//空格子
             {
                 resetPositionAndParent(this.transform, go.transform);
-                go.GetComponent<shortCut>().setID(oldParent.id);
-                oldParent.ClearInfo();
+                go.GetComponent<shortCut>().setID(id);
+                
             }
-            else if (go.tag == "Inventory_item")//有物品
+            else if (go.tag == "shortCutItem")//有物品
             {
                 nowParent = go.transform.parent.GetComponent<shortCut>();
-                int id = nowParent.id;
+                //int id = nowParent.id;
                 //int num = nowParent.num;
+                nowParent.ClearInfo();
+
+                resetPositionAndParent(this.transform, nowParent.transform);
+                nowParent.setID(id);
 
 
-                resetPositionAndParent(this.transform, go.transform.parent.transform);
-                nowParent.setID(oldParent.id);
-
-
-                resetPositionAndParent(go.transform, oldParent.transform);
-                oldParent.setID(id);
-
+                
             }
         }
         else

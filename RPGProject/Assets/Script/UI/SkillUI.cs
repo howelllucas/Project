@@ -35,26 +35,13 @@ public class SkillUI : MonoBehaviour
             default:
                 break;
         }
-        //foreach (int id in skillList)
-        //{
-            
-        //    int i = 0;
-        //    GameObject go= GameObject.Instantiate(skillItemPrefab,content);
-            
-        //    go.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, 200-i, 0);
-        //    go.GetComponent<skillItem>().getID(id);
-        //    i += 100;
-        //    if (i>400)
-        //    {
-        //        sv.GetComponent<ScrollRect>().content.sizeDelta += new Vector2(0, i + 150);
-        //    }
-        //}
+      
         for (int i = 0; i < skillList.Length; i++)
         {
             
             GameObject go = GameObject.Instantiate(skillItemPrefab, content);
 
-            //go.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, 240-i*100, 0);
+           
             go.GetComponent<skillItem>().getID(skillList[i]);
             
             

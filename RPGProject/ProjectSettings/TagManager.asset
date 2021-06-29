@@ -8,6 +8,8 @@ TagManager:
   - Inventory_item_grid
   - Inventory_item
   - ui
+  - shortCut
+  - shortCutItem
   layers:
   - Default
   - TransparentFX

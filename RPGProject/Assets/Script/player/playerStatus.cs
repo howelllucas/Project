@@ -11,10 +11,12 @@ public enum PlayerType
 public class playerStatus : MonoBehaviour
 {
     public PlayerType playerType;
-
-    public int grade = 1;
+    public string playerName="默认名字";
+    public int level = 1;
     public int hp = 100;
+    public float nowHp = 100f;
     public int mp = 100;
+    public float nowMp = 100f;
     public int coin = 200;
 
     public int attack;

@@ -74,12 +74,15 @@
     <Compile Include="Assets\Script\UI\SkillUI.cs" />
     <Compile Include="Assets\Script\UI\equipment.cs" />
     <Compile Include="Assets\Script\UI\equipmentItem.cs" />
+    <Compile Include="Assets\Script\UI\headUI.cs" />
     <Compile Include="Assets\Script\UI\inventoryItemGrid.cs" />
     <Compile Include="Assets\Script\UI\shop.cs" />
-    <Compile Include="Assets\Script\UI\shortCut.cs" />
+    <Compile Include="Assets\Script\UI\shortCutGrid.cs" />
     <Compile Include="Assets\Script\UI\skillItem.cs" />
     <Compile Include="Assets\Script\UI\skillItemIcon.cs" />
     <Compile Include="Assets\Script\UI\status.cs" />
+    <Compile Include="Assets\Script\UI\weaponItem.cs" />
+    <Compile Include="Assets\Script\UI\weaponUI.cs" />
     <Compile Include="Assets\Script\characterCreation\characterCreation.cs" />
     <Compile Include="Assets\Script\custom\CursorManager.cs" />
     <Compile Include="Assets\Script\custom\ObjectsInfo.cs" />
@@ -88,6 +91,7 @@
     <Compile Include="Assets\Script\npc\NPC.cs" />
     <Compile Include="Assets\Script\npc\barNpc.cs" />
     <Compile Include="Assets\Script\npc\shopNPC.cs" />
+    <Compile Include="Assets\Script\npc\weapShopNPC.cs" />
     <Compile Include="Assets\Script\player\characterMove.cs" />
     <Compile Include="Assets\Script\player\follow.cs" />
     <Compile Include="Assets\Script\player\playerAnimation.cs" />

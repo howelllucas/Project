@@ -43,8 +43,9 @@ public class SkillUI : MonoBehaviour
 
            
             go.GetComponent<skillItem>().getID(skillList[i]);
-            
-            
+            UpdateShow();
+
+
         }
         
     }
@@ -53,10 +54,20 @@ public class SkillUI : MonoBehaviour
     {
         this.transform.localPosition = new Vector3(0, 0, 0);
         isShow = true;
+        UpdateShow();
     }
     public void hideSkillUI()
     {
         this.transform.localPosition = new Vector3(-1300, 0, 0);
         isShow = false;
+    }
+
+    void UpdateShow()
+    {
+        skillItem[] items = this.GetComponentsInChildren<skillItem>();
+        foreach (var item in items)
+        {
+            item.updateShow(ps.level);
+        }
     }
 }

@@ -10,6 +10,7 @@ TagManager:
   - ui
   - shortCut
   - shortCutItem
+  - skillItem
   layers:
   - Default
   - TransparentFX

@@ -21,7 +21,7 @@ public class ObjectsInfo : MonoBehaviour
     public static ObjectsInfo instance;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         instance = this;
         //测试

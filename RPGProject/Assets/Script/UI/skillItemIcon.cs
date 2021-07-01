@@ -6,7 +6,9 @@ using UnityEngine.UI;
 
 public class skillItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    
+    public GameObject iconPrefab;
+
+
     Vector2 vecPoint = Vector2.one;
     private RectTransform canvasRect;
     //鼠标拖动后获得的新的坐标
@@ -18,10 +20,10 @@ public class skillItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     private int id;
 
-    //shortCut oldParent;
-    shortCut nowParent;
+    Transform oldParent;
+    Transform nowParent;
 
-    private bool isMouseStop = false;
+    //private bool isMouseStop = false;
 
     private void Start()
     {
@@ -31,21 +33,35 @@ public class skillItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (eventData.pointerCurrentRaycast.gameObject.tag== "shortCut")
+        oldParent = this.transform;
+        if (this.GetComponentInParent<shortCutGrid>())
         {
-            id = eventData.pointerCurrentRaycast.gameObject.GetComponent<shortCut>().id;
+            return;
         }
-        else
-        {
-            id = this.GetComponentInParent<skillItem>().id;
-        }
-        //oldParent = this.transform.parent.GetComponent<shortCut>();
+        this.id = GetComponentInParent<skillItem>().id;
+        this.transform.SetParent (this.transform.root);
         bool isRect = RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, eventData.position,
             eventData.enterEventCamera, out vecPoint);
         if (isRect)
         {
             offsetDis = this.GetComponent<RectTransform>().anchoredPosition - vecPoint;
         }
+        GameObject[] itemList = GameObject.FindGameObjectsWithTag("skillItem");
+        for (int i = 0; i < itemList.Length; i++)
+        {
+            if (itemList[i].transform.childCount!= itemList.Length)
+            {
+                GameObject go = Instantiate(iconPrefab, itemList[i].transform);
+                go.GetComponent<Image>().sprite = itemList[i].GetComponent<skillItem>().icon_image.sprite;
+                go.GetComponent<RectTransform>().anchoredPosition = new Vector3(-130, 0, 0);
+                
+            }
+        }
+        //if (eventData.pointerCurrentRaycast.gameObject.tag=="skillItem")
+        //{
+        //    GameObject go= Instantiate(iconPrefab, eventData.pointerCurrentRaycast.gameObject.transform);
+        //    go.GetComponent<RectTransform>().anchoredPosition = new Vector3(-130, 0, 0);
+        //}
         iconImage.raycastTarget = false;
     }
 
@@ -68,26 +84,25 @@ public class skillItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             if (go.tag == "shortCut")//空格子
             {
                 resetPositionAndParent(this.transform, go.transform);
-                go.GetComponent<shortCut>().setID(id);
+                //go.GetComponent<shortCut>().setID(id);
                 
             }
             else if (go.tag == "shortCutItem")//有物品
             {
-                nowParent = go.transform.parent.GetComponent<shortCut>();
-                //int id = nowParent.id;
-                //int num = nowParent.num;
-                nowParent.ClearInfo();
+                nowParent = go.transform.parent.transform;
+                go.GetComponentInParent<shortCutGrid>().ClearInfo();
 
-                resetPositionAndParent(this.transform, nowParent.transform);
-                nowParent.setID(id);
+                resetPositionAndParent(this.transform, nowParent);
 
-
-                
+            }
+            else
+            {
+                resetPositionAndParent(this.transform, nowParent);
             }
         }
         else
         {
-            resetPositionAndParent(this.transform, this.transform);
+            resetPositionAndParent(this.transform, oldParent);
         }
         iconImage.raycastTarget = true;
     }
@@ -99,4 +114,11 @@ public class skillItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         child.localPosition = Vector3.zero;
 
     }
+
+    //public void setIcon(int id)
+    //{
+    //    
+    //    SkillInfo info = SkillsInfo.instance.GetSkillInfoById(id);
+    //    iconImage.sprite= Resources.Load<Sprite>("Icon/" + info.icon_name);
+    //}
 }

@@ -43,7 +43,7 @@ public class Inventory : MonoBehaviour
         }
         return false;
     }
-    
+    //增加物品
     public void getId(int id,int count=1)
     {
         inventoryItemGrid grid = null;
@@ -79,6 +79,29 @@ public class Inventory : MonoBehaviour
             
         }
         
+    }
+    //减去物品
+    public bool MinusID(int id,int num=1)
+    {
+        inventoryItemGrid grid = null;
+        //判断是否有空位置
+        foreach (inventoryItemGrid item in list)
+        {
+            if (item.id == id)
+            {
+                grid = item; break;
+            }
+        }
+        if (grid==null)
+        {
+            return false;
+        }
+        else
+        {
+            bool success = grid.MinusNum(num);
+            return success;
+        }
+
     }
     public void showTable()
     {

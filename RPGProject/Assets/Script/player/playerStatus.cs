@@ -41,4 +41,17 @@ public class playerStatus : MonoBehaviour
         }
         return false;
     }
+    public void useDrug(int hp,int mp)
+    {
+        nowHp += hp;
+        nowMp += mp;
+        if (nowHp>this.hp)
+        {
+            nowHp = this.hp;
+        }
+        if (nowMp>this.mp)
+        {
+            nowMp = this.mp;
+        }
+    }
 }

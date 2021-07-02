@@ -83,16 +83,16 @@ public class skillItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         {
             if (go.tag == "shortCut")//空格子
             {
-                resetPositionAndParent(this.transform, go.transform);
-                //go.GetComponent<shortCut>().setID(id);
+                
+                go.GetComponent<shortCutGrid>().setSkill(id);
                 
             }
             else if (go.tag == "shortCutItem")//有物品
             {
-                nowParent = go.transform.parent.transform;
+                
                 go.GetComponentInParent<shortCutGrid>().ClearInfo();
-
-                resetPositionAndParent(this.transform, nowParent);
+                go.GetComponentInParent<shortCutGrid>().setSkill(id);
+                
 
             }
             else
@@ -117,8 +117,8 @@ public class skillItemIcon : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     //public void setIcon(int id)
     //{
-    //    
+
     //    SkillInfo info = SkillsInfo.instance.GetSkillInfoById(id);
-    //    iconImage.sprite= Resources.Load<Sprite>("Icon/" + info.icon_name);
+    //    iconImage.sprite = Resources.Load<Sprite>("Icon/" + info.icon_name);
     //}
 }

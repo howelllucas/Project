@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+
 /// <summary>
 /// 物品节点类，用于更换设置物品
 /// </summary>
@@ -103,7 +104,15 @@ public class Inventory_item : MonoBehaviour,IDragHandler,IBeginDragHandler,IEndD
                 
                 resetPositionAndParent(go.transform, oldParent.transform);
                 oldParent.setID(id,num);
-                
+
+            }
+            else if (go.tag == "shortCut")
+            {
+                if (info.type==ObjectType.Drug)
+                {
+                    resetPositionAndParent(this.transform, this.transform);
+                    go.GetComponent<shortCutGrid>().setDrug(id,oldParent.num);
+                }
             }
         }
         else

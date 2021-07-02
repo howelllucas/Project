@@ -934,6 +934,9 @@ MonoBehaviour:
   keyCode: 52
   skilliconPrefab: {fileID: 8717661210585658363, guid: 9977e29dfd6114805b7e72daba50a51e,
     type: 3}
+  drugPrefab: {fileID: 2560517638762906401, guid: cbffda1987805402d83b621fa11782c6,
+    type: 3}
+  numText: {fileID: 760785173}
 --- !u!114 &103707812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2993,6 +2996,9 @@ MonoBehaviour:
   keyCode: 54
   skilliconPrefab: {fileID: 8717661210585658363, guid: 9977e29dfd6114805b7e72daba50a51e,
     type: 3}
+  drugPrefab: {fileID: 2560517638762906401, guid: cbffda1987805402d83b621fa11782c6,
+    type: 3}
+  numText: {fileID: 2036758201}
 --- !u!114 &518548839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4931,6 +4937,9 @@ MonoBehaviour:
   keyCode: 53
   skilliconPrefab: {fileID: 8717661210585658363, guid: 9977e29dfd6114805b7e72daba50a51e,
     type: 3}
+  drugPrefab: {fileID: 2560517638762906401, guid: cbffda1987805402d83b621fa11782c6,
+    type: 3}
+  numText: {fileID: 984929406}
 --- !u!114 &794352592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8555,6 +8564,9 @@ MonoBehaviour:
   keyCode: 49
   skilliconPrefab: {fileID: 8717661210585658363, guid: 9977e29dfd6114805b7e72daba50a51e,
     type: 3}
+  drugPrefab: {fileID: 2560517638762906401, guid: cbffda1987805402d83b621fa11782c6,
+    type: 3}
+  numText: {fileID: 1296656585}
 --- !u!114 &1342027534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8844,6 +8856,9 @@ MonoBehaviour:
   keyCode: 51
   skilliconPrefab: {fileID: 8717661210585658363, guid: 9977e29dfd6114805b7e72daba50a51e,
     type: 3}
+  drugPrefab: {fileID: 2560517638762906401, guid: cbffda1987805402d83b621fa11782c6,
+    type: 3}
+  numText: {fileID: 1129018567}
 --- !u!114 &1408293862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10573,7 +10588,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -553, y: -142}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1637986592
@@ -12600,6 +12615,9 @@ MonoBehaviour:
   keyCode: 50
   skilliconPrefab: {fileID: 8717661210585658363, guid: 9977e29dfd6114805b7e72daba50a51e,
     type: 3}
+  drugPrefab: {fileID: 2560517638762906401, guid: cbffda1987805402d83b621fa11782c6,
+    type: 3}
+  numText: {fileID: 2047054725}
 --- !u!114 &2020044034
 MonoBehaviour:
   m_ObjectHideFlags: 0

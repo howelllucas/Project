@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{21BD93AE-C013-11DB-C887-5DF3656E048C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/UI/weaponItem.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/UI/shortCutGrid.cs">
     <Files>
-      <File FileName="Assets/Script/npc/weapShopNPC.cs" Line="11" Column="31" />
-      <File FileName="Assets/Script/UI/SkillUI.cs" Line="20" Column="1" />
-      <File FileName="Assets/Script/UI/weaponUI.cs" Line="32" Column="1" />
-      <File FileName="Assets/Script/UI/weaponItem.cs" Line="8" Column="19" />
-      <File FileName="Assets/Script/UI/Inventory.cs" Line="55" Column="21" />
-      <File FileName="Assets/Script/custom/ObjectsInfo.cs" Line="36" Column="1" />
+      <File FileName="Assets/Script/UI/Inventory_item.cs" Line="113" Column="76" />
+      <File FileName="Assets/Script/UI/shortCutGrid.cs" Line="64" Column="32" />
+      <File FileName="Assets/Script/UI/skillItemIcon.cs" Line="123" Column="8" />
+      <File FileName="Assets/Script/UI/inventoryItemGrid.cs" Line="46" Column="29" />
+      <File FileName="Assets/Script/player/playerStatus.cs" Line="54" Column="29" />
+      <File FileName="Assets/Script/UI/Inventory.cs" Line="84" Column="20" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,7 +20,7 @@
                 <Node name="player" expanded="True" />
                 <Node name="start" expanded="True" />
                 <Node name="UI" expanded="True">
-                  <Node name="weaponItem.cs" selected="True" />
+                  <Node name="shortCutGrid.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -31,11 +31,10 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="661d75a3-e758-4daa-9ab8-732f4d8aacda" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b3a4d4aa-ae4c-43b9-a3bb-659a6740423c" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/luhongwei/Documents/GitFloder/RPGProject/Assets/Script/UI/equipment.cs" relfile="Assets/Script/UI/equipment.cs" line="58" column="1" />
-      <Breakpoint file="/Users/luhongwei/Documents/GitFloder/RPGProject/Assets/Script/UI/weaponItem.cs" relfile="Assets/Script/UI/weaponItem.cs" line="29" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />

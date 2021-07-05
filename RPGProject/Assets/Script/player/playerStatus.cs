@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Data;
 using UnityEngine;
+using UnityEngine.UI;
+
 public enum PlayerType
 {
     Swordman,
@@ -27,7 +29,13 @@ public class playerStatus : MonoBehaviour
     public int speed_plus;
 
     public int point_remain;
+    public int total_Exp;
+    public float exp;
 
+    private void Start()
+    {
+        getExp(exp);
+    }
     public void getCoin(int num)
     {
         coin += num;
@@ -41,17 +49,34 @@ public class playerStatus : MonoBehaviour
         }
         return false;
     }
-    public void useDrug(int hp,int mp)
+    public void useDrug(int hp, int mp)
     {
         nowHp += hp;
         nowMp += mp;
-        if (nowHp>this.hp)
+        if (nowHp > this.hp)
         {
             nowHp = this.hp;
         }
-        if (nowMp>this.mp)
+        if (nowMp > this.mp)
         {
             nowMp = this.mp;
         }
+    }
+    public void getExp(float exp)
+    {
+        
+        total_Exp = 100 + level * 30;
+        this.exp += exp;
+        while (this.exp>=total_Exp)
+        {
+            level++;
+            total_Exp = 100 + level * 30;
+            this.exp -= total_Exp;
+        }
+        float value = this.exp / total_Exp;
+
+        EXPBar.instance.showValue(value);
+
+        
     }
 }

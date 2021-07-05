@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\EXPBar.cs" />
     <Compile Include="Assets\RPG\Effect\Effects_01\Prefebs\DestroyForTime.cs" />
     <Compile Include="Assets\RPG\Effect\Effects_01\Prefebs\FollowTarget.cs" />
     <Compile Include="Assets\RPG\Effect\Effects_02\AnimationSpeed.cs" />

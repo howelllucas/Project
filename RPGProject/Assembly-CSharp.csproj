@@ -89,6 +89,7 @@
     <Compile Include="Assets\Script\custom\ObjectsInfo.cs" />
     <Compile Include="Assets\Script\custom\SkillsInfo.cs" />
     <Compile Include="Assets\Script\custom\Tags.cs" />
+    <Compile Include="Assets\Script\enemy\WolfBaby.cs" />
     <Compile Include="Assets\Script\npc\NPC.cs" />
     <Compile Include="Assets\Script\npc\barNpc.cs" />
     <Compile Include="Assets\Script\npc\shopNPC.cs" />

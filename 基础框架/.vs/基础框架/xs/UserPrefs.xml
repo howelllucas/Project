@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{69DF8645-2414-1BE9-3E96-71311E2D775C}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ProjectBase/Base/BaseManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/ProjectBase/Base/BaseManager.cs" Line="7" Column="5" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="基础框架" expanded="True">
+            <Node name="Assets" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9fbfb6e1-fe04-49be-8c2f-4b11965ab3a6" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

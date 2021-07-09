@@ -1,12 +1,10 @@
 ﻿<Properties StartupConfiguration="{21BD93AE-C013-11DB-C887-5DF3656E048C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/UI/shortCutGrid.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/playerAttack.cs">
     <Files>
-      <File FileName="Assets/Script/UI/Inventory_item.cs" Line="113" Column="76" />
-      <File FileName="Assets/Script/UI/shortCutGrid.cs" Line="64" Column="32" />
-      <File FileName="Assets/Script/UI/skillItemIcon.cs" Line="123" Column="8" />
-      <File FileName="Assets/Script/UI/inventoryItemGrid.cs" Line="46" Column="29" />
-      <File FileName="Assets/Script/player/playerStatus.cs" Line="54" Column="29" />
-      <File FileName="Assets/Script/UI/Inventory.cs" Line="84" Column="20" />
+      <File FileName="Assets/WolfState.cs" Line="122" Column="1" />
+      <File FileName="Assets/playerAttack.cs" Line="60" Column="32" />
+      <File FileName="Assets/Script/player/characterMove.cs" Line="45" Column="60" />
+      <File FileName="Assets/Script/player/playerDir.cs" Line="13" Column="31" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,13 +14,13 @@
               <Node name="Script" expanded="True">
                 <Node name="characterCreation" expanded="True" />
                 <Node name="custom" expanded="True" />
+                <Node name="enemy" expanded="True" />
                 <Node name="npc" expanded="True" />
                 <Node name="player" expanded="True" />
                 <Node name="start" expanded="True" />
-                <Node name="UI" expanded="True">
-                  <Node name="shortCutGrid.cs" selected="True" />
-                </Node>
+                <Node name="UI" expanded="True" />
               </Node>
+              <Node name="playerAttack.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -31,7 +29,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="b3a4d4aa-ae4c-43b9-a3bb-659a6740423c" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9fbfb6e1-fe04-49be-8c2f-4b11965ab3a6" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/luhongwei/Documents/GitFloder/RPGProject/Assets/Script/UI/equipment.cs" relfile="Assets/Script/UI/equipment.cs" line="58" column="1" />

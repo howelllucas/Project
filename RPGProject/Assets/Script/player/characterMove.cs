@@ -39,4 +39,9 @@ public class characterMove : MonoBehaviour
             isMoving = false;
         }
     }
+    public void Move(Transform target)
+    {
+        transform.LookAt(target);
+        characterCtl.SimpleMove(transform.forward * speed);
+    }
 }

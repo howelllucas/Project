@@ -22,6 +22,16 @@ public class WolfBaby : MonoBehaviour
     public int hp = 100;
 
     private Color color;
+
+    public Transform target;
+    public float mixDistance=2;
+    public float maxDistance=5;
+
+    public string attackNowName= "WolfBaby-Attack1";
+    public float attack_timer;
+    public int attack_date=1;
+    public float crazyAttack = 0.2f;
+
     private void Start()
     {
         color=this.GetComponentInChildren<Renderer>().material.color ;
@@ -32,11 +42,11 @@ public class WolfBaby : MonoBehaviour
     {
         if (state==WolfState.Death)//死亡
         {
-            this.GetComponent<Animation>().Play("WolfBaby-Death");
+            this.GetComponent<Animation>().CrossFade("WolfBaby-Death");
         }
         else if (state == WolfState.Attack)//攻击
         {
-
+            AudoAttack();
         }
         else//巡逻
         {
@@ -91,5 +101,54 @@ public class WolfBaby : MonoBehaviour
         this.GetComponentInChildren<Renderer>().material.color = Color.red;
         yield return new WaitForSeconds(1f);
         this.GetComponentInChildren<Renderer>().material.color = color;
+    }
+    //自动攻击
+    public void AudoAttack()
+    {
+        if (target==null)
+        {
+            return;
+        }
+        float dis = Vector3.Distance(target.position, this.transform.position);
+        if (dis>maxDistance)//超出范围
+        {
+            target = null;
+            state = WolfState.Idle;
+        }
+        else if (dis<mixDistance)//攻击
+        {
+            this.GetComponent<Animation>().CrossFade(attackNowName);
+            attack_timer += Time.deltaTime;
+
+            if (attack_timer>attack_date)
+            {
+                state = WolfState.Idle;
+                attack_timer = 0;
+            }
+            else
+            {
+                randomAttack();
+            }
+            
+        }
+        else//跟随
+        {
+            transform.LookAt(target);
+            cc.SimpleMove(transform.forward * speed);
+            this.GetComponent<Animation>().CrossFade("WolfBaby-Walk");
+        }
+    }
+    private void randomAttack()
+    {
+        float num = Random.Range(0, 1);
+        if (num< crazyAttack)
+        {
+            attackNowName = "WolfBaby-Attack2";
+
+        }
+        else
+        {
+            attackNowName = "WolfBaby-Attack1";
+        }
     }
 }

@@ -102,6 +102,7 @@
     <Compile Include="Assets\Script\start\MovieMove.cs" />
     <Compile Include="Assets\Script\start\anyKey.cs" />
     <Compile Include="Assets\Script\start\buttonContainer.cs" />
+    <Compile Include="Assets\playerAttack.cs" />
     <None Include="Assets\TextInfo\OjbectsInfoList.txt" />
     <None Include="Assets\RPG\Shader\Transparent_Outline.shader" />
     <None Include="Assets\RPG\Shader\MaskShader.shader" />

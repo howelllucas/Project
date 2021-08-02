@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{7F05007B-AD62-DA2D-F730-A189DACD5285}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ParticleScaler/ParticleScaler.cs">
+    <Files>
+      <File FileName="Assets/ParticleScaler/ParticleScaler.cs" Line="93" Column="3" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MandalaUnitySellMyApp" expanded="True">
+            <Node name="Assets" expanded="True" selected="True">
+              <Node name="ParticleScaler" expanded="True" />
+              <Node name="Plugins" expanded="True">
+                <Node name="Android" expanded="True">
+                  <Node name="GoogleMobileAdsPlugin" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Scripts" expanded="True">
+                <Node name="Mandala" expanded="True" />
+                <Node name="Menu" expanded="True" />
+                <Node name="SavePicture" expanded="True" />
+                <Node name="TemplateScripts" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c3e5d621-2f63-41b3-890d-79f51d0cbfdb" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

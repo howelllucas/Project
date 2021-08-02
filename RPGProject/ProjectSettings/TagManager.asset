@@ -11,6 +11,7 @@ TagManager:
   - shortCut
   - shortCutItem
   - skillItem
+  - enemy
   layers:
   - Default
   - TransparentFX

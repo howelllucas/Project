@@ -64,7 +64,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\enemy.cs" />
+    <Compile Include="Assets\player.cs" />
+    <Compile Include="Assets\Scripts\inputTest.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Audio\AudioMgr.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Audio\MusicMgr.cs" />
     <Compile Include="Assets\Scripts\ProjectBase\Base\BaseManager.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Base\SingletonAutoMono.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Event\EventCenter.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Input\InputMgr.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Mono\MonoController.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Mono\MonoMgr.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Pool\PoolMgr.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Pool\Push.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Resource\ResMgr.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\Scene\SceneMgr.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\UI\BasePanel.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\UI\LoginPanel.cs" />
+    <Compile Include="Assets\Scripts\ProjectBase\UI\UIMgr.cs" />
+    <Compile Include="Assets\Scripts\Test1.cs" />
+    <Compile Include="Assets\task.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/luhongwei/Documents/GitFloder/基础框架/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

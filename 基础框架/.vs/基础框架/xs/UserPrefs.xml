@@ -1,13 +1,32 @@
 ﻿<Properties StartupConfiguration="{69DF8645-2414-1BE9-3E96-71311E2D775C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ProjectBase/Base/BaseManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ProjectBase/UI/BasePanel.cs">
     <Files>
-      <File FileName="Assets/Scripts/ProjectBase/Base/BaseManager.cs" Line="7" Column="5" />
+      <File FileName="Assets/Scripts/ProjectBase/UI/BasePanel.cs" Line="23" Column="27" />
+      <File FileName="Assets/Scripts/ProjectBase/UI/LoginPanel.cs" Line="15" Column="27" />
+      <File FileName="Assets/Scripts/ProjectBase/UI/UIMgr.cs" Line="62" Column="60" />
+      <File FileName="Assets/Scripts/Test1.cs" Line="17" Column="66" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="基础框架" expanded="True">
-            <Node name="Assets" expanded="True" selected="True" />
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="ProjectBase" expanded="True">
+                  <Node name="Audio" expanded="True" />
+                  <Node name="Base" expanded="True" />
+                  <Node name="Event" expanded="True" />
+                  <Node name="Input" expanded="True" />
+                  <Node name="Mono" expanded="True" />
+                  <Node name="Pool" expanded="True" />
+                  <Node name="Resource" expanded="True" />
+                  <Node name="Scene" expanded="True" />
+                  <Node name="UI" expanded="True">
+                    <Node name="BasePanel.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -15,7 +34,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9fbfb6e1-fe04-49be-8c2f-4b11965ab3a6" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c3e5d621-2f63-41b3-890d-79f51d0cbfdb" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

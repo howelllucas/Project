@@ -1299,6 +1299,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WolfBaby_No_Animation
       objectReference: {fileID: 0}
+    - target: {fileID: 100064, guid: ccdc8f5876456bb429b4c5e19e23eafa, type: 3}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 400038, guid: ccdc8f5876456bb429b4c5e19e23eafa, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.092
@@ -1777,6 +1781,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 210261156}
   m_CullTransparentMesh: 0
+--- !u!1 &220529302 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8756058961093162056, guid: 24ca4ac0b75ba408d8baec43d324267e,
+    type: 3}
+  m_PrefabInstance: {fileID: 5792819008379631054}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &220529303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220529302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44a7cba9eacfc4e408d29f0cb046d0ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nomalAttackDis: 2
+  skillAttackDis: 5
+  nomalAttackdate: 1
+  skillAttackdate: 1
+  timer: 0
+  attackState: 2
+  attackTarget: {fileID: 0}
+  chMove: {fileID: 0}
 --- !u!1001 &271330472
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11206,6 +11236,14 @@ MonoBehaviour:
   time: 1
   timer: 0
   speed: 1
+  hp: 100
+  target: {fileID: 0}
+  mixDistance: 2
+  maxDistance: 5
+  attackNowName: WolfBaby-Attack1
+  attack_timer: 0
+  attack_date: 1
+  crazyAttack: 0.2
 --- !u!143 &1686259227
 CharacterController:
   m_ObjectHideFlags: 0

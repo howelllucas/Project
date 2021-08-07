@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{70C7B7A1-068A-61C8-4D07-9F1D01F7A0BC}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/player.cs">
+    <Files>
+      <File FileName="Assets/MapManger.cs" Line="14" Column="11" />
+      <File FileName="Assets/player.cs" Line="42" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CubeRun" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="player.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e5f04ddd-3ce1-4da7-8fed-b1b4af686123" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

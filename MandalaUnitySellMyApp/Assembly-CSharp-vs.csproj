@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{76E20E44-5E1D-5ACB-C2F5-D10073982B24}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_1_3;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files/Unity5.1.3/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Unity5.1.3/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\AdvancedMobilePaint\Demo\PaintDemoController.cs" />
+     <Compile Include="Assets\AdvancedMobilePaint\Scripts\AdvancedMobilePaint.cs" />
+     <Compile Include="Assets\AdvancedMobilePaint\Scripts\PaintUndoManager.cs" />
+     <Compile Include="Assets\AdvancedMobilePaint\Scripts\Tools\BitmapBrushesTools.cs" />
+     <Compile Include="Assets\AdvancedMobilePaint\Scripts\Tools\FloodFillTools.cs" />
+     <Compile Include="Assets\AdvancedMobilePaint\Scripts\Tools\VectorBrushesTools.cs" />
+     <Compile Include="Assets\AdvancedMobilePaint\Scripts\Utils\PaintUtils.cs" />
+     <Compile Include="Assets\AdvancedMobilePaint\Scripts\Utils\TextureScale.cs" />
+     <Compile Include="Assets\AudienceNetwork\Library\AdHandler.cs" />
+     <Compile Include="Assets\AudienceNetwork\Library\AdSettings.cs" />
+     <Compile Include="Assets\AudienceNetwork\Library\AdUtility.cs" />
+     <Compile Include="Assets\AudienceNetwork\Library\AdView.cs" />
+     <Compile Include="Assets\AudienceNetwork\Library\InterstitialAd.cs" />
+     <Compile Include="Assets\AudienceNetwork\Library\NativeAd.cs" />
+     <Compile Include="Assets\AudienceNetwork\Library\SdkVersion.cs" />
+     <Compile Include="Assets\AudienceNetwork\Samples\NativeAdTest.cs" />
+     <Compile Include="Assets\ParticleScaler\ParticleScaler.cs" />
+     <Compile Include="Assets\Scripts\AnimEvents.cs" />
+     <Compile Include="Assets\Scripts\CrossPromotion\CrossPromotion.cs" />
+     <Compile Include="Assets\Scripts\CrossPromotion\DynamicScrollView.cs" />
+     <Compile Include="Assets\Scripts\CrossPromotion\InterstitialLink.cs" />
+     <Compile Include="Assets\Scripts\CrossPromotion\OfferWallIconChanger.cs" />
+     <Compile Include="Assets\Scripts\CrossPromotion\OfferWallLink.cs" />
+     <Compile Include="Assets\Scripts\CrossPromotion\WebelinxBanner.cs" />
+     <Compile Include="Assets\Scripts\FacebookNativeAd.cs" />
+     <Compile Include="Assets\Scripts\IntroLoading.cs" />
+     <Compile Include="Assets\Scripts\Mandala\ColorsPositionUpdate.cs" />
+     <Compile Include="Assets\Scripts\Mandala\LockButton.cs" />
+     <Compile Include="Assets\Scripts\Mandala\PaintSetUp.cs" />
+     <Compile Include="Assets\Scripts\Mandala\PaletteAsset.cs" />
+     <Compile Include="Assets\Scripts\Mandala\SelectionManager.cs" />
+     <Compile Include="Assets\Scripts\Mandala\SelectionManager1.cs" />
+     <Compile Include="Assets\Scripts\Mandala\Sticker.cs" />
+     <Compile Include="Assets\Scripts\Mandala\StickerClicked.cs" />
+     <Compile Include="Assets\Scripts\Mandala\StickersController.cs" />
+     <Compile Include="Assets\Scripts\Menu\Menu.cs" />
+     <Compile Include="Assets\Scripts\Menu\MenuManager.cs" />
+     <Compile Include="Assets\Scripts\Menu\SubMenusController.cs" />
+     <Compile Include="Assets\Scripts\PinchZoom.cs" />
+     <Compile Include="Assets\Scripts\SavePicture\DialogBackPressResult.cs" />
+     <Compile Include="Assets\Scripts\SavePicture\DialogSavePictureManager.cs" />
+     <Compile Include="Assets\Scripts\ScrollRect\ScrollRectSnapController.cs" />
+     <Compile Include="Assets\Scripts\TemplateScripts\DailyRewards.cs" />
+     <Compile Include="Assets\Scripts\TemplateScripts\DynamicContentSize.cs" />
+     <Compile Include="Assets\Scripts\TemplateScripts\FPS_Counter.cs" />
+     <Compile Include="Assets\Scripts\TemplateScripts\GlobalVariables.cs" />
+     <Compile Include="Assets\Scripts\TemplateScripts\NotificationsManager.cs" />
+     <Compile Include="Assets\Scripts\TemplateScripts\Rate.cs" />
+     <Compile Include="Assets\Scripts\TemplateScripts\SoundManager.cs" />
+     <Compile Include="Assets\Scripts\TemplateScripts\SoundSettings.cs" />
+     <Compile Include="Assets\Scripts\TemplateScripts\SplashScene.cs" />
+     <Compile Include="Assets\Scripts\TemplateScripts\StringLoggingExtensions.cs" />
+     <Compile Include="Assets\Scripts\WebelinxAndroidInApps.cs" />
+     <Compile Include="Assets\Scripts\WebelinxCMS.cs" />
+     <Compile Include="Assets\Scripts\WindowsPhoneBinding\WindowsPhoneBinding.cs" />
+     <None Include="Assets\AdvancedMobilePaint\Shaders\PaintCullingBack.shader" />
+     <None Include="Assets\AudienceNetwork\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\AdvancedMobilePaint\Shaders\PaintCullingFront.shader" />
+     <None Include="Assets\AdvancedMobilePaint\Shaders\PaintStandard.shader" />
+     <None Include="Assets\AudienceNetwork\Audience Network README.txt" />
+     <None Include="Assets\AudienceNetwork\Editor\Android\DefaultAndroidManifest.xml" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity5.1.3/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity5.1.3/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity5.1.3/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="WPUtils">
+ <HintPath>E:/NR5.1.3f/Mandala/Template/MandalaUnity/Assets/Plugins/WPUtils.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity5.1.3/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{BA7B0903-7179-110D-EA3C-D815452D4D24}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

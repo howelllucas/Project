@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{50CCECE5-A1D0-8C53-2443-A0D048CF595F}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/shangdian.cs">
+    <Files>
+      <File FileName="Assets/Scripts/character/CharacterMotor.cs" Line="34" Column="49" />
+      <File FileName="Assets/Scripts/character/PlayerState.cs" Line="17" Column="22" />
+      <File FileName="Assets/Scripts/character/mouseRay.cs" Line="28" Column="46" />
+      <File FileName="Assets/Scripts/ProjectBase/UI/UIManager.cs" Line="141" Column="39" />
+      <File FileName="Assets/shangdian.cs" Line="5" Column="35" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RPGProject_start" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="character" expanded="True" />
+                <Node name="ProjectBase" expanded="True">
+                  <Node name="Event" expanded="True" />
+                  <Node name="Input" expanded="True" />
+                  <Node name="Mono" expanded="True" />
+                  <Node name="UI" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="shangdian.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e5f04ddd-3ce1-4da7-8fed-b1b4af686123" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

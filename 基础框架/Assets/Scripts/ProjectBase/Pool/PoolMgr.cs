@@ -1,6 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
+
+public class PoolMgr : 
+{
+
+    public void GetObj()
+    {
+
+    }
+    public void PushObj()
+    {
+
+=======
 using UnityEngine.Accessibility;
 using UnityEngine.Events;
 /// <summary>
@@ -99,5 +112,6 @@ public class PoolMgr : BaseManager<PoolMgr>
     {
         PoolDir.Clear();
         poolObj = null;
+>>>>>>> 10d19dcc9c5b5fe46b7fa522c786afe39b0dae5f
     }
 }

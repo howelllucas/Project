@@ -65,7 +65,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\MapManger.cs" />
+    <Compile Include="Assets\Scripts\anim.cs" />
+    <Compile Include="Assets\Scripts\anim1.cs" />
+    <Compile Include="Assets\Scripts\followPlayer.cs" />
+    <Compile Include="Assets\Scripts\gem.cs" />
     <Compile Include="Assets\Scripts\player.cs" />
+    <Compile Include="Assets\Scripts\uiManger.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/2019.4.20f1c1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
